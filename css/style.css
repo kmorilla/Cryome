@@ -4,7 +4,7 @@ body {
 }
 
 .background {
-    background-image: linear-gradient(rgba(255, 255, 255, 0.55) 30%, rgba(255, 255, 255, 1)), url("/images/iceberg5.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.55) 30%, rgba(255, 255, 255, 1)), url("images/iceberg5.jpg");
     background-repeat: no-repeat;
     height: auto;
     background-size: 120%;
@@ -99,7 +99,7 @@ div div i {
 }
 
 .contouring-image {
-    background-image: linear-gradient(rgb(0, 0, 0, .16), rgb(0, 0, 0, .16)), url("/images/remove-4559326_1920.jpg");
+    background-image: linear-gradient(rgb(0, 0, 0, .16), rgb(0, 0, 0, .16)), url("images/remove-4559326_1920.jpg");
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
