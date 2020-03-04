@@ -25,39 +25,12 @@ body {
     /* background-color: #ffffff; */
 }
 
-/* .navbar-nav li a {
-    text-transform: uppercase;
-    color: #2B2F31;
-}
-
-.navbar-nav .active a {
-    color: #72CCE7;
-} */
-
-/* #home {
-    height: 100vh;    
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, .4)), url("../images/iceberg5.jpg");
-    background-repeat: no-repeat;
-    background-size: 97%;
-    background-position: left 27%;
-    clip-path: polygon(2% 9%, 97% 14%, 91% 90%, 6% 95%);
-} */
-
 /* #home {
     height: 100vh;
     background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, .4)), url("../images/iceberg5.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left 27%;
-} */
-
-/* #home {
-    height: 100vh;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, .4)), url("../images/iceberg5.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left 27%;
-    clip-path: polygon(100% 0, 100% 53%, 38% 96%, 0 70%, 0 0);
 } */
 
 #home {
@@ -93,6 +66,7 @@ h2 {
 
 h3 {
     font-size: 1.7rem;
+    color: #1A496B;
 }
 
 p {
@@ -157,6 +131,7 @@ div div i {
     background-size: cover;
     background-repeat: no-repeat;
     clip-path: polygon(0% 0, 100% 5%, 92% 90%, 8% 100%);
+    -webkit-clip-path: polygon(0% 0, 100% 5%, 92% 90%, 8% 100%);
 }
 
 #contouring div .row {
@@ -171,20 +146,142 @@ div div i {
     padding: 5px 30px;
 }
 
+/* #esthetician {
+    height: 400px;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
+    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+    background-position: bottom center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-attachment: fixed;
+    -webkit-background-attachment: fixed;
+    background-repeat: no-repeat;
+    color: #fff;
+} */
+
 #esthetician {
     height: 400px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url("../images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
+    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
     clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-    background-position: center;
+    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+    background-position: bottom center;
     background-size: cover;
-    background-attachment: fixed;
+    -webkit-background-size: 100% auto;
     background-repeat: no-repeat;
-
+    background-attachment: fixed;
+    color: #fff;
 }
 
-#esthetician div div div h3,
-#esthetician div div div p {}
+#esthetician div div div .btn {
+    background-color: #ffffff;
+    color: #1A496B;
+}
 
-#therapists {
-    height: 800px;
+#therapists div div h2 {
+    margin-bottom: 40px;
+}
+
+.therapist {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0px auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.therapist-boxes div {
+    margin-bottom: 30px;
+}
+
+.shane {
+    background-image: url("../images/Shane1.jpg");
+}
+
+.gonzalo {
+    background-image: url("../images/gonzalo1.jpg");
+}
+
+.shelby {
+    background-image: url("../images/shelby.jpg");
+}
+
+.jazmyn {
+    background-image: url("../images/Jazmyn.jpg");
+}
+
+.arneka {
+    background-image: url("../images/arneka.jpg");
+}
+
+.alexandria {
+    background-image: url("../images/alexandria.jpg");
+}
+
+#contact {
+    position: relative;
+}
+
+#map {
+    width: 100%;
+    height: 500px;
+    background-color: gray;
+}
+
+.overbox {
+    background-color: #1A496B;
+    position: absolute;
+    top: 80px;
+    left: 1000px;
+    z-index: 99;
+    height: auto;
+    width: auto;
+    flex-wrap: wrap;
+    float: left;
+    padding: 15px;
+    color: #fff;
+}
+
+.overbox div {
+    margin: 30px;
+}
+
+.overbox div:nth-child(1) {
+    float: right;
+}
+
+.overbox div:nth-child(2) {
+    float: left;
+}
+
+#reviews {
+    height: 400px;
+    background-color: #D8DDE1;
+}
+
+#reviews::before {
+    transform: skewY();
+}
+
+.fred {
+    height: 300px;
+    width: 100%;
+}
+
+.fred iframe html body {
+    font-family: 'Montserrat' !important;
+}
+
+.fred iframe html body div div div div div h4 {
+    font-weight: 400;
+}
+
+.frederick-widget-reviews hr {
+    border-top: none;
+}
+
+.frederick-widget-reviews .reviews-footer .powered-by {
+    text-align: center;
 }

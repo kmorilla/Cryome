@@ -84,7 +84,7 @@
             <div class="row padding">
                 <div class>
                     <h1 class="pb-5">Empowering Pain Relief &amp; Wellness </h1>
-                    <h3 class=" w-50">CryoMe is primarily focused on promoting well-being, pain relief, and recovery
+                    <h3 class=" w-50">CryoMe is primarily focused on promoting wellness, pain relief, and recovery
                         through the use of subzero temperatures.</h3>
                 </div>
             </div>
@@ -173,11 +173,11 @@
                     <div class="contouring-image h-100"></div>
                 </div>
                 <div class="col-6 text-center">
-                    <h3 class="mb-4">Lorem ipsum dolor sit amet</h3>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor
-                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                        et justo duo</p>
+                    <h3 class="mb-4">Cryo Contouring</h3>
+                    <p class="mb-4">With the use of our Cryo T-Shock device we are able to perform, what we call a
+                        contouring session, a non-invasive treatment that uses extreme cold to constrict the blood
+                        vessels which in turn reduces fatty deposits without causing damage to other tissues. The
+                        technique consists of controlled warm and cold temperatures applied directly to the skin.</p>
                     <button type="button" class="btn">Learn More</button>
                 </div>
             </div>
@@ -189,11 +189,10 @@
         <div class="container padding">
             <div class="row">
                 <div class="col-6 text-center">
-                    <h3 class="mb-4">Lorem ipsum dolor sit amet</h3>
-                    <p class="mb-4">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                        tempor
-                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
-                        et justo duo</p>
+                    <h3 class="mb-4">Esthetician</h3>
+                    <p class="mb-4">We believe that enhancing your beauty is a part of wellness.</p>
+                    <p>Invest in yourself with treatments that range from waxing, to skin care treatments, and teeth
+                        whitening</p>
                     <button type="button" class="btn">Learn More</button>
                 </div>
             </div>
@@ -202,12 +201,90 @@
 
     <!-- Therapists -->
     <section id="therapists">
-
+        <div class="container padding">
+            <div class="row justify-content-center text-center">
+                <h2 class="header-line">Therapists</h2>
+            </div>
+            <div class="row therapist-boxes">
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="d-flex justify-content-center flex-column text-center">
+                        <div class="shane therapist"></div>
+                        <h3>Shane</h3>
+                        <p>Medical Massage Therapist</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="d-flex justify-content-center flex-column text-center">
+                        <div class="gonzalo therapist"></div>
+                        <h3>Gonzalo</h3>
+                        <p>Massage Therapist</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="d-flex justify-content-center flex-column text-center">
+                        <div class="shelby therapist"></div>
+                        <h3>Shelby</h3>
+                        <p>Massage Therapist</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="d-flex justify-content-center flex-column text-center">
+                        <div class="jazmyn therapist"></div>
+                        <h3>Jazmyn</h3>
+                        <p>Massage Therapist</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="d-flex justify-content-center flex-column text-center">
+                        <div class="arneka therapist"></div>
+                        <h3>Dr. Arneka</h3>
+                        <p>Chiropractic</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="d-flex justify-content-center flex-column text-center">
+                        <div class="alexandria therapist"></div>
+                        <h3>Alexandria</h3>
+                        <p>Esthetician</p>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Reviews -->
+    <div id="reviews">
+        <div class="container h-100">
+            <div class="row h-100">
+                <div data-fred-widget-reviews class="fred my-auto"></div>
+            </div>
+        </div>
+    </div>
 
     <!-- Contact -->
+    <section id="contact">
+        <div id="map"></div>
+        <div class="overbox">
+            <div>
+                <h4>Office Hours</h4>
+                <p>Monday – Thursday</p>
+                <p>10:00 am – 9:00 pm</p>
+                <p>Friday – Sunday</p>
+                <p>10:00 am – 6:00 pm</p>
+            </div>
+            <div>
+                <h4>Location</h4>
+                <p>4810 Elk Grove Blvd. &#35;190</p>
+                <p>Elk Grove, CA 95757</p>
+            </div>
+            <div>
+                <h4>Contact Us</h4>
+                <p>(916) 955-8418</p>
+                <p>info@cryome.com</p>
+            </div>
+        </div>
+    </section>
+
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3 bg-dark">
@@ -226,6 +303,12 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
     <script src="js/navbar.js"></script>
+    <script src="js/googlemap.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAH7CrPuUVeU1mKe2PHtY7ai1u5T66rSig&callback=initMap">
+    </script>
+    <script src="https://d1yw3duy3i4qiv.cloudfront.net/js/sdk-v1.js">
+    </script>
+    <script src="js/reviews.js"></script>
 
 </body>
 
