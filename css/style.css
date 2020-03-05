@@ -163,13 +163,17 @@ div div i {
 #esthetician {
     height: 400px;
     background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
+    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 88%);
+    -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 88%);
     background-position: bottom center;
     background-size: cover;
     -webkit-background-size: 100% auto;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    color: #fff;
+}
+
+#esthetician h3 {
     color: #fff;
 }
 
@@ -230,39 +234,45 @@ div div i {
     background-color: gray;
 }
 
-.overbox {
-    background-color: #1A496B;
+.map-wrap {
     position: absolute;
-    top: 80px;
-    left: 1000px;
     z-index: 99;
-    height: auto;
-    width: auto;
-    flex-wrap: wrap;
-    float: left;
-    padding: 15px;
+    height: 100%;
+    width: 100%;
+    padding: 30px;
     color: #fff;
+    top: 0px;
+    left: 0px;
 }
 
-.overbox div {
-    margin: 30px;
+.overbox {
+    background-color: #1A496B;
+    padding: 30px;
+    float: left;
 }
 
 .overbox div:nth-child(1) {
     float: right;
+    margin-left: 50px;
 }
 
 .overbox div:nth-child(2) {
     float: left;
+    margin-bottom: 25px;
+}
+
+.overbox div:nth-child(3) p:nth-child(2) {
+    margin-bottom: unset;
 }
 
 #reviews {
-    height: 400px;
+    height: 450px;
     background-color: #D8DDE1;
+    margin-top: -70px;
 }
 
-#reviews::before {
-    transform: skewY();
+#reviews .row {
+    padding-top: 70px;
 }
 
 .fred {
@@ -270,18 +280,9 @@ div div i {
     width: 100%;
 }
 
-.fred iframe html body {
-    font-family: 'Montserrat' !important;
-}
-
-.fred iframe html body div div div div div h4 {
-    font-weight: 400;
-}
-
-.frederick-widget-reviews hr {
-    border-top: none;
-}
-
-.frederick-widget-reviews .reviews-footer .powered-by {
-    text-align: center;
+.triangle {
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+    background-color: #fff;
+    height: 70px;
+    width: 100%;
 }
