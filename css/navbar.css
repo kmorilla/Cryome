@@ -10,7 +10,7 @@
 }
 
 .navbar .nav-link {
-    color: #2B2F31;
+    color: #454647;
 }
 
 .navbar .nav-link:hover,
@@ -26,33 +26,33 @@
 
 /* Change navbar styling on scroll */
 .navbar.active {
-    background: #fff;
     box-shadow: 1px 2px 10px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, .95);
 }
 
 .navbar.active .nav-link {
-    color: #555;
+    color: #454647;
 }
 
 .navbar.active .nav-link:hover,
 .navbar.active .nav-link:focus {
-    color: #555;
+    color: #454647;
     text-decoration: none;
 }
 
 .navbar.active .navbar-brand {
-    color: #555;
+    color: #454647;
 }
 
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
     .navbar {
-        background: #fff;
+        background: rgba(255, 255, 255, 0.95);
     }
 
     .navbar .navbar-brand,
     .navbar .nav-link {
-        color: #555;
+        color: #454647;
     }
 }
