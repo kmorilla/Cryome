@@ -172,7 +172,7 @@ ul {
 
 @media (max-width: 576px) {
     #home, #home .container {
-        height: 85vh;
+        height: 90vh;
     } 
 }
 
@@ -184,17 +184,14 @@ ul {
 }
 
 .therapy-title-container {
-    height: 100% !important;
     display: flex;
     justify-content: center;
     text-align: center;
-}
-
-.therapy-title {
     width: 70%;
     background-color: #E7EBEF;
     top: -12vh;
-    position: relative;    
+    position: relative;  
+    margin: 0 auto;
 }
 
 .therapy-title div {
@@ -301,31 +298,66 @@ ul {
 @media (max-width: 576px) {
     #services .container {
         padding: 0;
-        max-width: unset;
+        max-width: 100%;
     }
 
     #services .row {
         justify-content: center;
+        margin: 0;
     }
-    
-    .therapy-title-container {
-        background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%);
 
+    #services .row div {
+        padding: 0;
+    }
+
+
+    .therapy-title-container {
+        width: 100%;
+        background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%);
+        clip-path: polygon(0 0, 100% 16%, 100% 100%, 0% 100%);
+        margin-bottom: -12vh;
     }
 
     .therapy-title {
-        width: 100%;
-        background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%);
-        margin: 0px 15px;
+        width: auto;
+    }
+
+    .therapy-title div {
+        margin: 150px 50px 80px 50px;
     }
 
     .therapy-title h3 {
         font-size: 1.6rem;
     }
+
+    .therapy-title p {
+        margin-top: 50px;
+    }
+
+    .scroll-wheel-container {
+        overflow: scroll hidden;
+        width: 500px;
+        background-color: #E7EBEF;
+    }
+
+    .scroll-wheel {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 100%;
+        width: 550px;
+        white-space: nowrap;
+    }
+
+    .scroll-wheel .box {
+        margin: 6px 0 6px 12px;
+        border: 3px solid #fff;
+    }
+
+    .box:nth-child(3), .box:nth-child(6) {
+        margin-right: 12px;
+    }
 }
-
-
-
 
 
 

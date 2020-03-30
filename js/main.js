@@ -20,13 +20,13 @@ function setHeight() {
 
     //--- therapy-title ---
 
-    var top = $(".therapy-title").position();
+    var top = $(".therapy-title-container").position();
     var product = top.top * -1;
     var therapyItemHeight = $(".therapy-items").innerHeight();
     var diagonalHeight = $(".diagonal-stripes-row").height();
     var total = product + therapyItemHeight + diagonalHeight;
 
-    $(".therapy-title").height(total);
+    $(".therapy-title-container").height(total);
 
     // console.log("Top position: " + product)
     // console.log("Therapy item height: " + therapyItemHeight)
@@ -35,9 +35,23 @@ function setHeight() {
 }
 
 $(document).ready(function () {
-    setHeight();
+    var windowWidth1 = $(window).width();
+
+    if (windowWidth1 > 751) {
+        setHeight();
+    }
 })
 
 $(window).resize(function () {
-    setHeight();
+    var windowWidth1 = $(window).width();
+
+    if (windowWidth1 > 751) {
+        setHeight();
+    }
 })
+
+$(document).ready(function () {
+    $(".carousel").carousel({
+        interval: 0
+    })
+});
