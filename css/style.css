@@ -104,7 +104,7 @@ ul {
 /*-- Home --*/
 
 #home {
-    height: 112vh;
+    height: 100vh;
     background-image: url(../images/iceberg5.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -131,12 +131,8 @@ ul {
 }
 
 @media (max-width: 1200px) {
-    h1 {
-        font-size: 2rem;
-    }    
-
-    h2 {
-        font-size: 1.4rem;
+    html {
+        font-size: 90%;
     }
 
     #home {
@@ -145,6 +141,10 @@ ul {
 }
 
 @media (max-width: 992px) {
+    html {
+        font-size: 80%;
+    }
+    
     #home {
         background-size: 135%;
         background-position: center 35%;
@@ -170,50 +170,42 @@ ul {
     } 
 }
 
-@media (max-width: 576px) {
-    #home, #home .container {
-        height: 90vh;
-    } 
-}
-
-
 /*-- Services --*/
-
-#services .container {
-    position: relative;
-}
 
 .therapy-title-container {
     display: flex;
     justify-content: center;
     text-align: center;
-    width: 70%;
     background-color: #E7EBEF;
-    top: -12vh;
-    position: relative;  
-    margin: 0 auto;
+    /* top: -12vh; */
+    /* position: relative;   */
+    height: 100%;
+    padding-top: 40%;
 }
 
-.therapy-title div {
-    margin: 200px 50px 0 50px;
+.therapy-title {
+    margin: 0 50px;
 }
 
 .therapy-title p {
-    margin-top: 100px;
+    margin-top: 2.9rem;
     font-size: 1.2rem;
 }
 
+.therapy-items-container {
+    display: flex;
+}
+
 .therapy-items {
-    padding-top: 80px;
+    /* padding-top: 80px; */
     text-align: center;
     justify-content: center;
 }
 
 .therapy-items .box{    
     background-color: #E7EBEF;        
-    margin: 15px 15px;
-    height: 200px;
-    width: 200px;
+    margin: 0 auto;
+    width: 30%;
     display: flex;
 }
 
@@ -222,22 +214,37 @@ ul {
 }
 
 .therapy-items i {
-    font-size: 45px;
+    font-size: 2.3rem;
     padding-bottom: 20px;
 }
 
-.promo-box-container {    
-    height: 420px;    
+.diagonal-stripes-row{
+    position: relative;
+    width: 100%;
+}
+
+.diagonal-stripes {
+    margin: 15px;    
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
+    background-image: repeating-linear-gradient(135deg, #621839, #621839 12px , transparent 12px, transparent 26px);
+}
+
+.promo-box-container {
     position: absolute;
-    top: 770px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;    
 }
 
 .promo-box {
     background-color: #183962;
     color: #ffffff;
-    padding: 20px 40px;
-    height: 110px;
-    width: 510px;
+    padding: 2.5rem;
+    width: 75%;  
+    margin: auto; 
+    text-align: center;
 }
 
 .promo-box p {
@@ -245,119 +252,34 @@ ul {
     font-size: 1.4rem;
 }
 
-.diagonal-stripes {
-    margin-top: 15px;
-    clip-path: polygon(100% 0, 0% 100%, 0 0);
-    background-image: repeating-linear-gradient(135deg, #621839, #621839 12px , transparent 12px, transparent 26px);
-}
-
-@media (max-width: 1200px) {
-    .therapy-title {
-        width: 80%;
+@media (max-width: 768px) {
+    #services .padding {
+        padding-top: 0;
     }
-
-    .therapy-title p {
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 992px) {
-    .therapy-items .box{    
-        margin: 6px 6px;
-        height: 165px;
-        width: 165px;
-    }
-
-    .therapy-items i {
-        font-size: 33px;        
-    }
-
-    .therapy-items h4 {
-        font-size: 1rem;
-    }
-
-    .promo-box-container {
-        height: 339px;
-        top: 620px;
-    }
-
-    .promo-box {
-        width: 400px;  
-        height: 95px;      
-    }
-
-    .promo-box p {
-        font-size: 1.1rem;
-    }
-
-    .diagonal-stripes {
-        margin-top: 6px;
-    }
-}
-
-@media (max-width: 576px) {
-    #services .container {
-        padding: 0;
-        max-width: 100%;
-    }
-
-    #services .row {
-        justify-content: center;
-        margin: 0;
-    }
-
-    #services .row div {
-        padding: 0;
-    }
-
 
     .therapy-title-container {
-        width: 100%;
         background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%);
-        clip-path: polygon(0 0, 100% 16%, 100% 100%, 0% 100%);
-        margin-bottom: -12vh;
+        padding: 40px;        
     }
 
-    .therapy-title {
-        width: auto;
-    }
-
-    .therapy-title div {
-        margin: 150px 50px 80px 50px;
-    }
-
-    .therapy-title h3 {
-        font-size: 1.6rem;
-    }
-
-    .therapy-title p {
-        margin-top: 50px;
-    }
-
-    .scroll-wheel-container {
-        overflow: scroll hidden;
-        width: 500px;
+    .therapy-items-container {
         background-color: #E7EBEF;
     }
 
-    .scroll-wheel {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        height: 100%;
-        width: 550px;
-        white-space: nowrap;
+    .therapy-items {
+        margin: 5px; 
     }
 
-    .scroll-wheel .box {
-        margin: 6px 0 6px 12px;
-        border: 3px solid #fff;
+    .box {
+        border: 2px solid #fff;
     }
 
-    .box:nth-child(3), .box:nth-child(6) {
-        margin-right: 12px;
+    .diagonal-stripes {
+        margin-top: 0;
     }
 }
+
+
 
 
 

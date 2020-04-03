@@ -1,57 +1,38 @@
 
 function setHeight() {
 
+    //--- .box margin ---
+
+    var totalWidth = $(".box").outerWidth(true);
+    var shortWidth = $(".box").width();
+    var marginHeight = (totalWidth - shortWidth) / 2;
+
+    $(".box").css({ marginTop: marginHeight, marginBottom: marginHeight });
+
+    $(".therapy-title-container").css({ marginTop: marginHeight, marginBottom: marginHeight });
+
+
+    //--- .box height ---
+
+    var boxWidth = $(".box").width();
+
+    $(".box").height(boxWidth);
+
+
     //--- diagonal-stripes ---
+    var boxHeight = $(".box").outerHeight(true);
 
-    var windowWidth = $(window).width();
-    // console.log(windowWidth);
-
-    var boxWidth = $(".box").outerWidth(true);
-
-    if (windowWidth > 751) {
-        $(".diagonal-stripes").height(boxWidth * 2);
-        $(".diagonal-stripes").width(boxWidth * 2);
-    }
-    else {
-        $(".diagonal-stripes").height(boxWidth);
-        $(".diagonal-stripes").width(boxWidth);
-    }
+    console.log(boxHeight);
 
 
-    //--- therapy-title ---
-
-    var top = $(".therapy-title-container").position();
-    var product = top.top * -1;
-    var therapyItemHeight = $(".therapy-items").innerHeight();
-    var diagonalHeight = $(".diagonal-stripes-row").height();
-    var total = product + therapyItemHeight + diagonalHeight;
-
-    $(".therapy-title-container").height(total);
-
-    // console.log("Top position: " + product)
-    // console.log("Therapy item height: " + therapyItemHeight)
-    // console.log("Diagonal box height: " + diagonalHeight)
-    // console.log("Total: " + total)
+    $(".diagonal-stripes").height(boxHeight * 1.6);
+    $(".diagonal-stripes").width(boxHeight * 1.6);
 }
 
 $(document).ready(function () {
-    var windowWidth1 = $(window).width();
-
-    if (windowWidth1 > 751) {
-        setHeight();
-    }
+    setHeight();
 })
 
 $(window).resize(function () {
-    var windowWidth1 = $(window).width();
-
-    if (windowWidth1 > 751) {
-        setHeight();
-    }
+    setHeight();
 })
-
-$(document).ready(function () {
-    $(".carousel").carousel({
-        interval: 0
-    })
-});
