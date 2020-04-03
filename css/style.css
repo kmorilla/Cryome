@@ -200,6 +200,8 @@ ul {
     /* padding-top: 80px; */
     text-align: center;
     justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .therapy-items .box{    
@@ -241,7 +243,7 @@ ul {
 .promo-box {
     background-color: #183962;
     color: #ffffff;
-    padding: 2.5rem;
+    padding: 2rem;
     width: 75%;  
     margin: auto; 
     text-align: center;
@@ -253,8 +255,26 @@ ul {
 }
 
 @media (max-width: 768px) {
+
+    .therapy-items .box {
+        width: 50%;
+    }
+}
+
+@media (max-width: 576px) {
+    
     #services .padding {
         padding-top: 0;
+    }
+
+    #services .container-sm .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #services .row div {
+        padding-left: 0;
+        padding-right: 0;
     }
 
     .therapy-title-container {
@@ -275,7 +295,7 @@ ul {
     }
 
     .diagonal-stripes {
-        margin-top: 0;
+        margin: 0;
     }
 }
 
