@@ -32,8 +32,13 @@ h3 {
 }
 
 h4{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     color: #183962;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.9rem;
 }
 
 ul {
@@ -165,6 +170,10 @@ ul {
 }
 
 @media (max-width: 768px) {
+    html {
+        font-size: 60%;
+    }
+    
     #home {
         background-size: 155%;
     } 
@@ -301,92 +310,70 @@ ul {
 
 
 
+/*--- Cosmetics ---*/
 
-
-
-
-
-
-
-
-
-
-
-
-.header-line {
-    border-bottom: 1px solid #2B2F31;
-    width: 500px;
-    height: 80px;
-}
-
-.contouring-image {
-    background-image: linear-gradient(rgb(0, 0, 0, .16), rgb(0, 0, 0, .16)), url("../images/remove-4559326_1920.jpg");
-    background-position: center center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    clip-path: polygon(0% 0, 100% 5%, 92% 90%, 8% 100%);
-    -webkit-clip-path: polygon(0% 0, 100% 5%, 92% 90%, 8% 100%);
-}
-
-#contouring div .row {
-    height: 400px;
-}
-
-
-
-/* #esthetician {
-    height: 400px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
-    clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-    -webkit-clip-path: polygon(0 20%, 100% 0, 100% 100%, 0 80%);
-    background-position: bottom center;
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    background-repeat: no-repeat;
-    color: #fff;
+/* #cosmetics {
+    position: relative;
 } */
 
-#esthetician {
-    height: 400px;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)), url("../images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
-    clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 88%);
-    -webkit-clip-path: polygon(0 13%, 100% 0, 100% 100%, 0 88%);
-    background-position: bottom center;
-    background-size: cover;
-    -webkit-background-size: 100% auto;
+.cosmetics-mask {
+    height: 100%;
+    width: 100%;
+    background-color: #E7EBEF;
+    /* clip-path: polygon(0 15%, 100% 15%, 100% 54%, 0 85%); */
+}
+
+/* .cosmetics-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+} */
+
+.contouring, .esthetician {
+    padding: 40px 0;
+}
+
+.contouring-image-container {
+    width: 100%;
+    padding: 0 20px;
+    height: auto;
+}
+
+.contouring img {
+    width: 100%;   
+}
+
+.contouring {
+    padding: 3rem 0;
+}
+
+.esthetician {
+    background-image: linear-gradient(rgba(24, 57, 98, .8), rgba(24, 57, 98, .8)), url("/images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-position: center 75%;
+    background-size: cover;
+    padding: 3rem 0;
     color: #fff;
 }
 
-#esthetician h3 {
+.esthetician div  h4 {
     color: #fff;
 }
 
-#esthetician div div div .btn {
-    background-color: #ffffff;
-    color: #1A496B;
+.promo-box2 {
+    border: 3px solid #fff;
 }
 
-#therapists div div h2 {
-    margin-bottom: 40px;
-}
 
-.therapist {
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    margin: 0px auto;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
 
-.therapist-boxes div {
-    margin-bottom: 30px;
-}
+
+
+
+
+
+
+
 
 .shane {
     background-image: url("../images/Shane1.jpg");
