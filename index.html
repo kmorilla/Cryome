@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css" />
+
+
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="shortcut icon" href="images/CryoMe-Logo-favicon2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
 
     <script src="https://kit.fontawesome.com/1aee8376ce.js" crossorigin="anonymous"></script>
 
@@ -140,54 +145,62 @@
         </div>
     </section>
 
-    <section id="cosmetics">
-        <!-- <div class="cosmetics-mask"></div> -->
-        <div class="cosmetics-container padding">
-            <div class="container">
-                <div class="row pb-3">
-                    <div class="col text-center">
-                        <h3>Cosmetics</h3>
-                    </div>
-                </div>
-                <div class="row contouring justify-content-around align-items-center">
-                    <div class="col-6">
-                        <div class="contouring-image-container"><img src="/images/slim-waist.jpg" alt="slim waist">
+    <!-- Cosmetics -->
+
+    <section id="cosmetics" class="padding">
+        <div class="cosmetics-container">
+            <div class="cosmetics-mask"></div>
+            <div class="cosmetics-wrap">
+                <div class="container">
+                    <div class="row pb-3">
+                        <div class="col text-center">
+                            <h3>Cosmetics</h3>
                         </div>
                     </div>
-                    <div class="col-5">
-                        <div class="row h-100 ">
-                            <div class="col p-3">
-                                <h4>Cryo Contouring</h4>
+                    <div class="row contouring justify-content-around align-items-center">
+                        <div class="col-6">
+                            <div class="contouring-image-container"><img src="/images/slim-waist.jpg" alt="slim waist">
                             </div>
-                            <div class="col-12 p-3">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                        </div>
+                        <div class="col-5">
+                            <div class="row h-100 ">
+                                <div class="col p-3">
+                                    <h4>Cryo Contouring</h4>
+                                </div>
+                                <div class="col-12 p-3">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor
+                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                        et
+                                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                                </div>
+                                <div class="col p-3"><button class="btn">Learn More</button></div>
                             </div>
-                            <div class="col p-3"><button class="btn">Learn More</button></div>
                         </div>
                     </div>
-                </div>
-                <div class="row esthetician justify-content-around align-items-center">
-                    <div class="col-5">
-                        <div class="row h-100 text-right">
-                            <div class="col p-3">
-                                <h4>Cryo Contouring</h4>
+                    <div class="row esthetician justify-content-around align-items-center">
+                        <div class="col-5">
+                            <div class="row h-100 text-right">
+                                <div class="col p-3">
+                                    <h4>Cryo Contouring</h4>
+                                </div>
+                                <div class="col-12 p-3">
+                                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                                        tempor
+                                        invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos
+                                        et
+                                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                                </div>
+                                <div class="col p-3"><button class="btn">Learn More</button></div>
                             </div>
-                            <div class="col-12 p-3">
-                                <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
-                                    tempor
-                                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
-                                    accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
-                            </div>
-                            <div class="col p-3"><button class="btn">Learn More</button></div>
                         </div>
-                    </div>
-                    <div class="col-5">
-                        <div class="row h-100">
-                            <div class="col text-center promo-box2">
-                                <p class="my-auto p-4">Click me to customize your own introductory wellness pack!</p>
+                        <div class="col-5">
+                            <div class="row h-100">
+                                <div class="col text-center promo-box2">
+                                    <p class="my-auto p-4 p-sm-3">Click me to customize your own introductory wellness
+                                        pack!
+                                    </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -196,10 +209,82 @@
         </div>
     </section>
 
+    <!-- Therapists -->
+    <section id="therapists">
+        <div class="container padding">
+            <div class="row text-center pb-4">
+                <div class="col-12">
+                    <h3>Therapists</h3>
+                </div>
+            </div>
+            <div class="row text-center h-100">
+                <div class="col owl-carousel">
+
+                    <div class="therapist">
+                        <div class="shane mx-auto"></div>
+                        <h4 class="mt-4 mb-3">Shane</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                    </div>
+
+
+                    <div class="therapist">
+                        <div class="gonzalo mx-auto"></div>
+                        <h4 class="mt-4 mb-3">Gonzalo</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                    </div>
+
+                    <div class="therapist">
+                        <div class="shelby mx-auto"></div>
+                        <h4 class="mt-4 mb-3">Shelby</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                    </div>
+
+                    <div class="therapist">
+                        <div class="jazmyn mx-auto"></div>
+                        <h4 class="mt-4 mb-3">Jazmyn</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                    </div>
+
+                    <div class="therapist">
+                        <div class="arneka mx-auto"></div>
+                        <h4 class="mt-4 mb-3">Arneka</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                    </div>
+
+                    <div class="therapist">
+                        <div class="alexandria mx-auto"></div>
+                        <h4 class="mt-4 mb-3">Alexandria</h4>
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod
+                            tempor
+                            invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et
+                            accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+
 
 
     <!-- Contact -->
-    <!-- <section id="contact">
+    <section id="contact">
         <div id="map"></div>
         <div class="map-wrap">
             <div class="row h-100">
@@ -223,17 +308,17 @@
                     </div>
                 </div>
             </div>
-            </div>
-    </section> -->
+        </div>
+    </section>
 
     <!-- Reviews -->
-    <!-- <div id="reviews" class="padding">
+    <div id="reviews" class="padding">
         <div class="container h-100">
             <div class="row h-100">
                 <div data-fred-widget-reviews class="fred my-auto"></div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!-- Footer -->
     <footer class="footer mt-auto py-3">
@@ -245,21 +330,29 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
         </script>
+
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
         </script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
+
     <script src="js/navbar.js"></script>
+
     <script src="js/googlemap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ3sAL1iupV2j_ITRSCDpemAs_J2Xy0jk&callback=initMap">
     </script>
+
     <script src="https://d1yw3duy3i4qiv.cloudfront.net/js/sdk-v1.js">
     </script>
+
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+
     <script src="js/reviews.js"></script>
     <script src="js/reviews-jquery.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/owl.js"></script>
 </body>
 
 </html>

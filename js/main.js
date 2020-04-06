@@ -39,6 +39,12 @@ function setHeight() {
 
     $(".diagonal-stripes").height(boxHeight * 1.5);
     $(".diagonal-stripes").width(boxHeight * 1.5);
+
+
+    //--- cosmetics height ---
+    var cosmeticsHeight = $(".cosmetics-wrap").height();
+
+    $(".cosmetics-mask").height(cosmeticsHeight);
 }
 
 
@@ -50,3 +56,6 @@ $(document).ready(function () {
 $(window).resize(function () {
     setHeight();
 })
+
+
+

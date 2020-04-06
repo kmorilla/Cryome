@@ -312,23 +312,24 @@ ul {
 
 /*--- Cosmetics ---*/
 
-/* #cosmetics {
+.cosmetics-container {
     position: relative;
-} */
+
+}
 
 .cosmetics-mask {
     height: 100%;
     width: 100%;
     background-color: #E7EBEF;
-    /* clip-path: polygon(0 15%, 100% 15%, 100% 54%, 0 85%); */
+    clip-path: polygon(0 26%, 100% 26%, 100% 64%, 0 94%);
 }
 
-/* .cosmetics-container {
+.cosmetics-wrap {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-} */
+}
 
 .contouring, .esthetician {
     padding: 40px 0;
@@ -337,11 +338,12 @@ ul {
 .contouring-image-container {
     width: 100%;
     padding: 0 20px;
-    height: auto;
+    height: auto;    
 }
 
 .contouring img {
     width: 100%;   
+    clip-path: polygon(0 0, 100% 6%, 95% 84%, 5% 98%);
 }
 
 .contouring {
@@ -365,15 +367,44 @@ ul {
     border: 3px solid #fff;
 }
 
+#cosmetics .btn {
+    padding: 5px 20px;
+}
+
+.esthetician .btn {
+    color: #183962;
+    background-color: #fff;
+    border-color: #183962;
+}
+
+.esthetician .btn:hover {
+    background-color: #183962;
+    color: #fff;
+    border-color: #fff;
+}
 
 
 
+/* Therapists */
 
 
+#therapists {
+    background: linear-gradient(transparent 33%, #E7EBEF 30%, #E7EBEF 61%, transparent 61%);
+}
 
+.therapist {
+    padding: 20px 3rem;
+}
 
+.therapist div {
+    width: 250px;
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
 
-
+}
 
 .shane {
     background-image: url("../images/Shane1.jpg");
@@ -398,6 +429,9 @@ ul {
 .alexandria {
     background-image: url("../images/alexandria.jpg");
 }
+
+
+/* --- Contact --- */
 
 #contact {
     position: relative;
@@ -438,7 +472,7 @@ ul {
 }
 
 .overbox {
-    background-color: #1A496B;
+    background-color: rgba(24, 57, 98, .9);
     padding: 30px;
     float: left;
 }
@@ -456,6 +490,13 @@ ul {
 .overbox div:nth-child(3) p:nth-child(3) {
     margin-bottom: unset !important;
 }
+
+.overbox h4 {
+    color: #fff;
+}
+
+
+/* --- Reviews --- */
 
 #reviews {
     height: 500px;
