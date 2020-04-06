@@ -442,7 +442,7 @@ ul {
     height: 500px;
 }
 
-.map-wrap {
+/* .map-wrap {
     position: absolute;
     z-index: 99;
     height: 100%;
@@ -493,6 +493,65 @@ ul {
 
 .overbox h4 {
     color: #fff;
+} */
+
+#contact {
+    position: relative;
+}
+
+.map1 {
+position: absolute;
+top:0;
+left: 55vw;
+height: 100%;
+display: flex;
+}
+
+.map2 {
+    background-color: rgba(24, 57, 98, .9);
+    margin: auto 0;
+    display: flex;
+}
+
+.map2 h4, .map2 p {
+    color: #fff;
+}
+
+.map2 .pr-4 p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .map1 {
+        left: 50vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .map1 {
+        left: 45vw;
+    }
+
+    #map {
+        height: 430px;
+    }
+}
+
+@media (max-width: 768px) {
+    #map {
+        height: 500px;
+    }
+
+    .map1 {
+        height: unset;
+        top: 300px;
+        width: 100%;
+        left: 0;
+    }
+
+    .map2 {
+        margin: 0 auto;
+    }
 }
 
 
