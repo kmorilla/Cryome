@@ -263,12 +263,6 @@ ul {
     font-size: 1.4rem;
 }
 
-@media (max-width: 768px) {
-
-    .therapy-items .box {
-        width: 50%;
-    }
-}
 
 @media (max-width: 576px) {
     
