@@ -3,14 +3,14 @@ function setHeight() {
 
     //--- services margins ---
 
-    var totalWidth = $(".box").outerWidth(true);
-    var shortWidth = $(".box").width();
+    var totalWidth = $(".therapy").outerWidth(true);
+    var shortWidth = $(".therapy").width();
     var marginHeight = (totalWidth - shortWidth) / 2;
 
     var marginTB = { marginTop: marginHeight, marginBottom: marginHeight };
     var marginLR = { marginLeft: marginHeight, marginRight: marginHeight };
 
-    $(".box").css(marginTB);
+    $(".therapy").css(marginTB);
 
     var windowWidth = $(window).outerWidth();
     var marginZeroTB = { marginTop: 0, marginBottom: 0 };
@@ -27,18 +27,18 @@ function setHeight() {
         $(".diagonal-stripes").css(marginZeroTB);
     }
 
-    //--- .box height ---
+    //--- .therapy height ---
 
-    var boxWidth = $(".box").width();
+    var therapyWidth = $(".therapy").width();
 
-    $(".box").height(boxWidth);
+    $(".therapy").height(therapyWidth);
 
 
     //--- diagonal-stripes ---
-    var boxHeight = $(".box").outerHeight(true);
+    var therapyHeight = $(".therapy").outerHeight(true);
 
-    $(".diagonal-stripes").height(boxHeight * 1.5);
-    $(".diagonal-stripes").width(boxHeight * 1.5);
+    $(".diagonal-stripes").height(therapyHeight * 1.5);
+    $(".diagonal-stripes").width(therapyHeight * 1.5);
 
 
     //--- cosmetics height ---

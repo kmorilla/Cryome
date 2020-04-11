@@ -12,11 +12,9 @@ function initMap() {
 
     var windowWidth = $(window).outerWidth(true);
 
-    if (windowWidth > 768) {
-        map.panBy(300, 0);
-    } else {
-        map.panBy(0, 0);
-    }
+
+    map.panBy(0, 0);
+
 
     var marker = new google.maps.Marker({
         position: uluru,
@@ -24,6 +22,3 @@ function initMap() {
     });
 }
 
-$(window).resize(function () {
-    initMap();
-});

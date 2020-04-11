@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 2.6rem;
+    font-size: 2.6em;
     font-weight: 700;
 }
 
@@ -21,24 +21,24 @@ h1,h3 {
 }
 
 h2 {
-    font-size: 1.7rem;
+    font-size: 1.7em;
     color: #ffffff;
 }
 
 h3 {
-    font-size: 1.9rem;
+    font-size: 1.9em;
     font-weight: 600;
     color: #621839;
 }
 
 h4{
-    font-size: 1.3rem;
+    font-size: 1.3em;
     color: #183962;
 }
 
 p {
-    font-size: 1.15rem;
-    line-height: 1.9rem;
+    font-size: 1.15em;
+    line-height: 1.9em;
 }
 
 ul {
@@ -48,7 +48,7 @@ ul {
 }
 
 .padding {
-    padding: 80px 0;
+    padding: 5rem 0;
 }
 
 
@@ -136,20 +136,12 @@ ul {
 }
 
 @media (max-width: 1200px) {
-    html {
-        font-size: 90%;
-    }
-
     #home {
         background-size: 120%;
     }
 }
 
 @media (max-width: 992px) {
-    html {
-        font-size: 80%;
-    }
-    
     #home {
         background-size: 135%;
         background-position: center 35%;
@@ -170,62 +162,59 @@ ul {
 }
 
 @media (max-width: 768px) {
-    html {
-        font-size: 60%;
-    }
-    
     #home {
         background-size: 155%;
     } 
 }
 
-/*-- Services --*/
+
+/*-----------------------------
+            Services 
+ ------------------------------*/
+
+#services {
+    text-align: center;
+}
+
+.therapy-title-container, .therapy-items {
+    justify-content: center;
+}
+
+.therapy-title-container, .therapy-items-container, .therapy-items, .therapy, .promo-box-container {
+    display: flex;
+}
 
 .therapy-title-container {
-    display: flex;
-    justify-content: center;
-    text-align: center;
     background-color: #E7EBEF;
-    /* top: -12vh; */
-    /* position: relative;   */
     height: 100%;
-    padding-top: 40%;
+    padding-top: 5em;
 }
 
 .therapy-title {
-    margin: 0 50px;
+    margin: 0 3em;
 }
 
 .therapy-title p {
-    margin-top: 2.9rem;
-    font-size: 1.2rem;
-}
-
-.therapy-items-container {
-    display: flex;
+    margin-top: 2.9em;
+    font-size: 1.2em;
 }
 
 .therapy-items {
-    /* padding-top: 80px; */
-    text-align: center;
-    justify-content: center;
-    display: flex;
     flex-wrap: wrap;
 }
 
-.therapy-items .box{    
+.therapy{    
     background-color: #E7EBEF;        
     margin: 0 auto;
     width: 30%;
-    display: flex;
 }
 
-.therapy-items .box div {
+.therapy-items .therapy div {
     margin: auto;
 }
 
 .therapy-items i {
-    font-size: 2.3rem;
+    font-size: 2.3em;
     padding-bottom: 20px;
 }
 
@@ -246,26 +235,48 @@ ul {
     left: 0;
     height: 100%;
     width: 100%;
-    display: flex;    
 }
 
 .promo-box {
     background-color: #183962;
     color: #ffffff;
-    padding: 2rem;
+    padding: 2em;
     width: 75%;  
     margin: auto; 
-    text-align: center;
 }
 
 .promo-box p {
     margin-bottom: unset;
-    font-size: 1.4rem;
+    font-size: 1.4em;
 }
 
+@media (max-width: 1200px) {
+    #services {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    #services {
+        font-size: 11.5px;
+    }
+
+    .therapy-title {
+        margin: 0 2em;
+    }    
+}
+
+@media (max-width: 768px) {
+    #services {
+        font-size: 9px;
+    }
+}
 
 @media (max-width: 576px) {
-    
+    #services {
+        font-size: 13px;
+    }
+
     #services .padding {
         padding-top: 0;
     }
@@ -275,7 +286,7 @@ ul {
         margin-right: 0;
     }
 
-    #services .row div {
+    .padding-remove {
         padding-left: 0;
         padding-right: 0;
     }
@@ -285,6 +296,10 @@ ul {
         padding: 40px;        
     }
 
+    .therapy-title {
+        margin: 0 4em;
+    }   
+
     .therapy-items-container {
         background-color: #E7EBEF;
     }
@@ -293,7 +308,7 @@ ul {
         margin: 5px; 
     }
 
-    .box {
+    .therapy {
         border: 2px solid #fff;
     }
 
@@ -379,25 +394,43 @@ ul {
 
 
 
-/* Therapists */
-
+/*-----------------------------
+            Therapists 
+ ------------------------------*/
 
 #therapists {
-    background: linear-gradient(transparent 33%, #E7EBEF 30%, #E7EBEF 61%, transparent 61%);
+    background: linear-gradient(transparent 23%, #E7EBEF 23%, #E7EBEF 43%, transparent 43%);
 }
 
-.therapist {
-    padding: 20px 3rem;
+.therapist h4, .therapist p {
+    padding: 0 2rem;
 }
 
 .therapist div {
-    width: 250px;
-    height: 250px;
+    width: 15.6em;
+    height: 15.6em;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 50%;
 
+}
+
+.owl-prev {
+    left: 2%;
+    position: absolute;
+    top: 7em;
+}
+
+.owl-next {
+    position: absolute;
+    left: 96%;
+    top: 7em;
+}
+
+.owl-prev i, .owl-next i {
+    font-size: 2.2em;
+    color: #454647;
 }
 
 .shane {
@@ -424,11 +457,40 @@ ul {
     background-image: url("../images/alexandria.jpg");
 }
 
+@media (max-width: 1200px) {
+    #therapists {
+        font-size: 14px;
+        background: linear-gradient(transparent 23%, #E7EBEF 23%, #E7EBEF 40%, transparent 40%);
+    }
+}
+
+@media (max-width: 992px) {
+    #therapists {
+        font-size: 11.5px;
+        background: linear-gradient(transparent 25%, #E7EBEF 25%, #E7EBEF 47%, transparent 47%);
+    }
+}
+
+@media (max-width: 768px) {
+    #therapists {
+        font-size: 9px;
+        background: linear-gradient(transparent 26%, #E7EBEF 26%, #E7EBEF 45%, transparent 45%);
+    }
+}
+
+@media (max-width: 576px) {
+    #therapists {
+        font-size: 13px;
+        background: linear-gradient(transparent 25%, #E7EBEF 25%, #E7EBEF 48%, transparent 48%);
+    }
+}
+
 
 /* --- Contact --- */
 
 #contact {
     position: relative;
+    font-size: 16px;
 }
 
 #map {
@@ -436,123 +498,68 @@ ul {
     height: 500px;
 }
 
-/* .map-wrap {
+#contact h4 {
+    font-size: 1.3em;
+}
+
+#contact p {
+    line-height: 1.5rem;
+    font-size: 1em;
+}
+
+.map-info-container {
     position: absolute;
-    z-index: 99;
+    top:0;
+    left: 20px;
     height: 100%;
-    width: auto;
-    padding: 30px;
-    color: #fff;
-    top: 0px;
-    left: 60%;
+    display: flex;
 }
 
-@media (max-width: 1500px) {
-    .map-wrap {
-        left: 55%;
-    }
-}
-
-@media (max-width: 1300px) {
-    .map-wrap {
-        left: 50%;
-    }
-}
-
-@media (max-width: 1200px) {
-    .map-wrap {
-        left: 45%;
-    }
-}
-
-.overbox {
-    background-color: rgba(24, 57, 98, .9);
-    padding: 30px;
-    float: left;
-}
-
-.overbox div:nth-child(1) {
-    float: right;
-    margin-left: 50px;
-}
-
-.overbox div:nth-child(2) {
-    float: left;
-    margin-bottom: 25px;
-}
-
-.overbox div:nth-child(3) p:nth-child(3) {
-    margin-bottom: unset !important;
-}
-
-.overbox h4 {
-    color: #fff;
-} */
-
-#contact {
-    position: relative;
-}
-
-.map1 {
-position: absolute;
-top:0;
-left: 55vw;
-height: 100%;
-display: flex;
-}
-
-.map2 {
+.map-info {
     background-color: rgba(24, 57, 98, .9);
     margin: auto 0;
     display: flex;
 }
 
-.map2 h4, .map2 p {
+.map-location {
+    padding-right: 1.5rem;
+}
+
+.map-contact {
+    padding-top: .5rem;
+}
+
+.map-hours {
+    padding-left: .5rem;
+}
+
+.map-info h4, .map-info p {
     color: #fff;
 }
 
-.map2 .pr-4 p:last-child {
+.map-location p:last-child {
     margin-bottom: 0;
 }
 
-@media (max-width: 1200px) {
-    .map1 {
-        left: 50vw;
-    }
-}
-
 @media (max-width: 992px) {
-    .map1 {
-        left: 45vw;
-    }
-
-    #map {
-        height: 430px;
-    }
-}
-
-@media (max-width: 768px) {
-    #map {
-        height: 500px;
-    }
-
-    .map1 {
+    .map-info-container {
         height: unset;
         top: 300px;
         width: 100%;
         left: 0;
     }
 
-    .map2 {
+    .map-info {
         margin: 0 auto;
-    }
+    }    
 }
+
 
 
 /* --- Reviews --- */
 
 #reviews {
-    height: 500px;
+    padding: 80px 0;
 }
 
 .fred {
@@ -563,4 +570,16 @@ display: flex;
 .footer {
     height: 130px;
     background-color: rgb(6, 18, 26);
+}
+
+@media (max-width: 768px) {
+    #reviews {
+        padding-bottom: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    #reviews {
+        padding-bottom: 180px;
+    }
 }
