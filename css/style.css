@@ -51,6 +51,30 @@ ul {
     padding: 5rem 0;
 }
 
+@media (max-width: 1200px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    html {
+        font-size: 11.5px;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 13px;        
+    }
+}
+
 
 /*-- Navbar --*/
 
@@ -187,16 +211,16 @@ ul {
 .therapy-title-container {
     background-color: #E7EBEF;
     height: 100%;
-    padding-top: 5em;
+    padding-top: 5rem;
 }
 
 .therapy-title {
-    margin: 0 3em;
+    margin: 0 3rem;
 }
 
 .therapy-title p {
-    margin-top: 2.9em;
-    font-size: 1.2em;
+    margin-top: 2.9rem;
+    font-size: 1.2rem;
 }
 
 .therapy-items {
@@ -214,7 +238,7 @@ ul {
 }
 
 .therapy-items i {
-    font-size: 2.3em;
+    font-size: 2.3rem;
     padding-bottom: 20px;
 }
 
@@ -240,43 +264,23 @@ ul {
 .promo-box {
     background-color: #183962;
     color: #ffffff;
-    padding: 2em;
+    padding: 2rem;
     width: 75%;  
     margin: auto; 
 }
 
 .promo-box p {
     margin-bottom: unset;
-    font-size: 1.4em;
-}
-
-@media (max-width: 1200px) {
-    #services {
-        font-size: 14px;
-    }
+    font-size: 1.4rem;
 }
 
 @media (max-width: 992px) {
-    #services {
-        font-size: 11.5px;
-    }
-
     .therapy-title {
-        margin: 0 2em;
+        margin: 0 2rem;
     }    
 }
 
-@media (max-width: 768px) {
-    #services {
-        font-size: 9px;
-    }
-}
-
 @media (max-width: 576px) {
-    #services {
-        font-size: 13px;
-    }
-
     #services .padding {
         padding-top: 0;
     }
@@ -297,7 +301,7 @@ ul {
     }
 
     .therapy-title {
-        margin: 0 4em;
+        margin: 0 4rem;
     }   
 
     .therapy-items-container {
@@ -407,8 +411,8 @@ ul {
 }
 
 .therapist div {
-    width: 15.6em;
-    height: 15.6em;
+    width: 15.6rem;
+    height: 15.6rem;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -417,19 +421,19 @@ ul {
 }
 
 .owl-prev {
-    left: 2%;
+    left: calc((100% - 1140px) / 2);
     position: absolute;
-    top: 7em;
+    top: 7rem;
 }
 
 .owl-next {
     position: absolute;
-    left: 96%;
-    top: 7em;
+    left: calc(((100% - 1140px) / 2) + 1140px - 1.1rem);
+    top: 7rem;
 }
 
 .owl-prev i, .owl-next i {
-    font-size: 2.2em;
+    font-size: 2.2rem;
     color: #454647;
 }
 
@@ -459,29 +463,74 @@ ul {
 
 @media (max-width: 1200px) {
     #therapists {
-        font-size: 14px;
         background: linear-gradient(transparent 23%, #E7EBEF 23%, #E7EBEF 40%, transparent 40%);
+    }    
+
+    .owl-prev {
+        left: calc((100% - 960px) / 2);
+        position: absolute;
+        top: 7rem;
+    }
+    
+    .owl-next {
+        position: absolute;
+        left: calc(((100% - 960px) / 2) + 960px - 1.1rem);
+        top: 7rem;
     }
 }
 
 @media (max-width: 992px) {
     #therapists {
-        font-size: 11.5px;
         background: linear-gradient(transparent 25%, #E7EBEF 25%, #E7EBEF 47%, transparent 47%);
     }
+
+    .owl-prev {
+        left: calc((100% - 720px) / 2);
+        position: absolute;
+        top: 7rem;
+    }
+    
+    .owl-next {
+        position: absolute;
+        left: calc(((100% - 720px) / 2) + 720px - 1.1rem);
+        top: 7rem;
+    }
+
 }
 
 @media (max-width: 768px) {
     #therapists {
-        font-size: 9px;
         background: linear-gradient(transparent 26%, #E7EBEF 26%, #E7EBEF 45%, transparent 45%);
+    }
+
+    .owl-prev {
+        left: calc((100% - 540px) / 2);
+        position: absolute;
+        top: 7rem;
+    }
+    
+    .owl-next {
+        position: absolute;
+        left: calc(((100% - 540px) / 2) + 540px - 1.1rem);
+        top: 7rem;
     }
 }
 
 @media (max-width: 576px) {
     #therapists {
-        font-size: 13px;
         background: linear-gradient(transparent 25%, #E7EBEF 25%, #E7EBEF 48%, transparent 48%);
+    }
+
+    .owl-prev {
+        left: 2.2rem;
+        position: absolute;
+        top: 7rem;
+    }
+    
+    .owl-next {
+        position: absolute;
+        left: calc(100% - 2.2rem);
+        top: 7rem;
     }
 }
 
@@ -503,14 +552,14 @@ ul {
 }
 
 #contact p {
-    line-height: 1.5rem;
+    line-height: 1.5em;
     font-size: 1em;
 }
 
 .map-info-container {
     position: absolute;
     top:0;
-    left: 20px;
+    right: calc((100% - 1140px) / 2);
     height: 100%;
     display: flex;
 }
@@ -541,17 +590,56 @@ ul {
     margin-bottom: 0;
 }
 
+@media (max-width: 1200px) {
+    #contact {
+        font-size: 14px;
+    }
+
+    .map-info-container {
+        right: calc((100% - 960px) / 2);
+    }    
+}
+
 @media (max-width: 992px) {
+    #contact {
+        font-size: 13px;
+    }
+
+    #map {
+        height: 400px;
+    }
+
+    .map-info-container {
+        right: calc((100% - 720px) / 4);
+    }  
+}
+
+@media (max-width: 768px) {
+    #contact {
+        font-size: 12px;
+    }
+
+    #map {
+        height: 450px;
+    }
+
     .map-info-container {
         height: unset;
-        top: 300px;
-        width: 100%;
-        left: 0;
+        top: unset;
+        bottom: 20px;
+        right: 0;  
+        width: fit-content;    
     }
 
     .map-info {
         margin: 0 auto;
     }    
+}
+
+@media (max-width: 576px) {
+    #contact {
+        font-size: 11px;        
+    }
 }
 
 

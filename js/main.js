@@ -1,5 +1,5 @@
 
-function setHeight() {
+function setHeight(windowWidth) {
 
     //--- services margins ---
 
@@ -12,7 +12,6 @@ function setHeight() {
 
     $(".therapy").css(marginTB);
 
-    var windowWidth = $(window).outerWidth();
     var marginZeroTB = { marginTop: 0, marginBottom: 0 };
     var marginZeroLR = { marginLeft: 0, marginRight: 0 };
 
@@ -47,14 +46,31 @@ function setHeight() {
     $(".cosmetics-mask").height(cosmeticsHeight);
 }
 
+function findWidth(windowWidth) {
+    var mapWidth = $(".map-info").outerWidth();
+    var newLeft = ((windowWidth - mapWidth) / 2);
+
+    if (windowWidth < 768) {
+        $(".map-info-container").css("left", newLeft);
+    } else {
+        $(".map-info-container").css("left", "");
+    }
+}
+
 
 $(document).ready(function () {
-    setHeight();
+    var windowWidth = $(window).outerWidth();
+
+    setHeight(windowWidth);
+    findWidth(windowWidth);
 })
 
 
 $(window).resize(function () {
-    setHeight();
+    var windowWidth = $(window).outerWidth();
+
+    setHeight(windowWidth);
+    findWidth(windowWidth);
 })
 
 
