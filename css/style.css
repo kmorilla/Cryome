@@ -51,32 +51,44 @@ ul {
     padding: 5rem 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
     html {
         font-size: 14px;
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     html {
         font-size: 11.5px;
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     html {
         font-size: 9px;
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
     html {
         font-size: 11.5px;        
+    }
+
+    .padding-mobile {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .margin-mobile {
+        margin-left: 0;
+        margin-right: 0;
     }
 }
 
 
-/*-- Navbar --*/
+/*-----------------------------
+            Navbar 
+ ------------------------------*/
 
 .navbar {
     background-color: rgba(255, 255, 255, .96);
@@ -130,7 +142,7 @@ ul {
     margin-right: 2.5rem;
 } 
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .navbar-button-mobile {
         visibility: visible;
         display: flex;
@@ -143,7 +155,9 @@ ul {
 }
 
 
-/*-- Button --*/
+/*-----------------------------
+            Button 
+ ------------------------------*/
 
 .btn {
     background-color: #621839;
@@ -163,6 +177,7 @@ ul {
 }
 
 
+
 /*-----------------------------
              Home 
  ------------------------------*/
@@ -174,10 +189,10 @@ ul {
 }
 
 .jumbotron-fluid {
-    background: linear-gradient(#fff 20%, transparent 20%, transparent 80%, #fff 80%), url(../images/iceberg5.jpg);
+    background: linear-gradient(#fff 20%, transparent 20%, transparent 80%, #fff 80%), url(../images/derek-oyen-4ReskwNsh68-unsplash.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: left 35%;
+    background-position: center;
     height: 100%;
     width: 100%;
 }
@@ -189,7 +204,7 @@ ul {
 }
 
 #home h1 {
-    padding-bottom: 55px;
+    padding-bottom: 3.2rem;
 }
 
 
@@ -199,13 +214,9 @@ ul {
     }
 }
 
-@media (max-width: 992px) {
-    #home {
-        background-size: 135%;
-        background-position: center 35%;
-    }
-
+@media (max-width: 991.98px) {
     #home .row {
+        background-color: rgba(24, 57, 98, .75);
         clip-path: unset;
         text-align: center;
         width: 100%;
@@ -221,20 +232,16 @@ ul {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     #home {
-        background-size: 155%;
-    } 
+        height: 80vh;
+    }
 }
 
 @media (max-width: 575.98px) {
     #home .row {
-        width: 90%;
+        width: 95%;
     }    
-
-    #home {
-        font-size: 13px;
-    }
 
     .home-container {
         padding: 0 2.5rem;
@@ -325,13 +332,13 @@ ul {
     font-size: 1.4rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .therapy-title {
         margin: 0 2rem;
     }    
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
     #services .padding {
         padding-top: 0;
     }
@@ -341,14 +348,20 @@ ul {
         margin-right: 0;
     }
 
-    .padding-remove {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
     .therapy-title-container {
         background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%);
         padding: 2.5rem;        
+    }
+
+    .therapy-title-container::before {
+        content: "";
+        position: absolute;
+        height: 40px;
+        width: 50%;
+        background-color: #E7EBEF;
+        top: -40px;
+        left: 0;
+        clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
     }
 
     .therapy-title {
@@ -421,13 +434,13 @@ ul {
     font-size: 1.2rem;
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     .cosmetics-mask {        
         clip-path: polygon(0 10%, 100% 10%, 100% 53%, 0 81%);
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
     #cosmetics {
         text-align: center;      
     }
@@ -544,7 +557,7 @@ ul {
     background-image: url("../images/alexandria.jpg");
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
     #therapists {
         background: linear-gradient(transparent 23%, #E7EBEF 23%, #E7EBEF 40%, transparent 40%);
     }    
@@ -562,7 +575,7 @@ ul {
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     #therapists {
         background: linear-gradient(transparent 25%, #E7EBEF 25%, #E7EBEF 47%, transparent 47%);
     }
@@ -581,7 +594,7 @@ ul {
 
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     #therapists {
         background: linear-gradient(transparent 26%, #E7EBEF 26%, #E7EBEF 45%, transparent 45%);
     }
@@ -599,7 +612,7 @@ ul {
     }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
     #therapists {
         background: linear-gradient(transparent 25%, #E7EBEF 25%, #E7EBEF 48%, transparent 48%);
     }
@@ -622,6 +635,10 @@ ul {
 /*-----------------------------
             Contact 
  ------------------------------*/
+
+.contact-padding {
+    padding-top: 5rem;
+}
 
 #contact {
     position: relative;
@@ -676,7 +693,7 @@ ul {
     margin-bottom: 0;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199.98px) {
     #contact {
         font-size: 14px;
     }
@@ -686,7 +703,7 @@ ul {
     }    
 }
 
-@media (max-width: 992px) {
+@media (max-width: 991.98px) {
     #contact {
         font-size: 13px;
     }
@@ -700,7 +717,7 @@ ul {
     }  
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767.98px) {
     #contact {
         font-size: 12px;
     }
@@ -722,7 +739,7 @@ ul {
     }    
 }
 
-@media (max-width: 576px) {
+@media (max-width: 575.98px) {
     #contact {
         font-size: 11px;        
     }
@@ -735,27 +752,45 @@ ul {
  ------------------------------*/
 
 #reviews {
-    padding: 80px 0;
+    height: 100%;
+    padding-top: 5rem;
+    position: relative;
+    background-color: #E7EBEF;
+}
+
+#reviews::before {
+    content: "";
+    height: 100%;
+    width: 50%;
+    background-color: #fff;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .fred {
-    height: 300px;
+    height: 100%;
     width: 100%;
 }
 
+#reviews .fred iframe {
+    min-height: 0 !important;
+    height: 400px !important;
+}
+
+@media (max-width: 575.98px) {
+    .fred {
+        height: 450px;
+    }
+}
+
+
+/*-----------------------------
+            Footer 
+ ------------------------------*/
+
 .footer {
     height: 130px;
-    background-color: rgb(6, 18, 26);
-}
-
-@media (max-width: 768px) {
-    #reviews {
-        padding-bottom: 160px;
-    }
-}
-
-@media (max-width: 576px) {
-    #reviews {
-        padding-bottom: 180px;
-    }
+    background-color: #0E2139;
 }
