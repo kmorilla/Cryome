@@ -297,7 +297,7 @@ ul {
 
     .therapy-title-container {
         background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%);
-        padding: 40px;        
+        padding: 2.5em;        
     }
 
     .therapy-title {
@@ -322,8 +322,9 @@ ul {
 }
 
 
-
-/*--- Cosmetics ---*/
+/*-----------------------------
+            Cosmetics 
+ ------------------------------*/
 
 .cosmetics-container {
     position: relative;
@@ -334,7 +335,7 @@ ul {
     height: 100%;
     width: 100%;
     background-color: #E7EBEF;
-    clip-path: polygon(0 26%, 100% 26%, 100% 64%, 0 94%);
+    clip-path: polygon(0 10%, 100% 10%, 100% 58%, 0 88%);
 }
 
 .cosmetics-wrap {
@@ -344,11 +345,8 @@ ul {
     width: 100%;
 }
 
-.contouring, .esthetician {
-    padding: 40px 0;
-}
 
-.contouring-image-container {
+.contouring-image {
     width: 100%;
     padding: 0 20px;
     height: auto;    
@@ -360,10 +358,65 @@ ul {
 }
 
 .contouring {
-    padding: 3rem 0;
+    padding: 2rem 0;
 }
 
-.esthetician {
+.contouring-info {
+    padding-top: 1.5rem;
+}
+
+#cosmetics .btn {
+    padding: 5px 20px;
+    font-size: 1.2em;
+}
+
+@media (max-width: 1200px) {
+    #cosmetics {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 992px) {
+    #cosmetics {
+        font-size: 11.5px;
+    }
+
+    .cosmetics-mask {        
+        clip-path: polygon(0 10%, 100% 10%, 100% 53%, 0 81%);
+    }
+}
+
+@media (max-width: 768px) {
+    #cosmetics {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 576px) {
+    #cosmetics {
+        font-size: 13px;  
+        text-align: center;      
+    }
+
+    .cosmetics-mask {        
+        clip-path: polygon(0 13%, 100% 13%, 100% 53%, 0 81%);
+    }
+
+    .contouring-image-container {
+        display: none;
+        visibility: hidden;
+    }    
+
+    .contouring-info {
+        padding-top: 0;
+    }
+
+    .contouring-info p {
+        padding: 0 2.5em;
+    }
+}
+
+/* .esthetician {
     background-image: linear-gradient(rgba(24, 57, 98, .8), rgba(24, 57, 98, .8)), url("/images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
     background-repeat: no-repeat;
     background-position: center 75%;
@@ -378,11 +431,7 @@ ul {
 
 .promo-box2 {
     border: 3px solid #fff;
-}
-
-#cosmetics .btn {
-    padding: 5px 20px;
-}
+} 
 
 .esthetician .btn {
     color: #183962;
@@ -394,7 +443,7 @@ ul {
     background-color: #183962;
     color: #fff;
     border-color: #fff;
-}
+} */
 
 
 
