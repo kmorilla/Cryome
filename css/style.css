@@ -285,14 +285,23 @@ ul {
     flex-wrap: wrap;
 }
 
-.therapy{    
+.therapy {    
     background-color: #E7EBEF;        
     margin: 0 auto;
     width: 30%;
+    color: #E7EBEF;
+}
+
+.therapy:hover {
+    text-decoration: none;
+    background-color: #fff;
+    transition: .2s;
+    border: 2px solid #E7EBEF;
 }
 
 .therapy-items .therapy div {
     margin: auto;
+    color: #454647;
 }
 
 .therapy-items i {
@@ -316,15 +325,22 @@ ul {
     top: 0;
     left: 0;
     height: 100%;
-    width: 70%;
+    width: 100%;
 }
 
 .promo-box {
     background-color: #183962;
     color: #ffffff;
-    padding: 2rem;
-    width: 75%;  
+    padding: 1rem 1.5rem;
+    width: 60%;  
     margin: auto; 
+}
+
+.promo-box:hover {
+    transition: .2s;
+    background-color: #fff;
+    border: 2px solid #183962;
+    color: #183962;
 }
 
 .promo-box p {
@@ -383,14 +399,6 @@ ul {
     .diagonal-stripes {
         margin: 0;
     }
-
-    .promo-box-container {
-        width: 100%;
-    }
-
-    .promo-box {
-        width: 60%;
-    }
 }
 
 
@@ -438,8 +446,10 @@ ul {
 }
 
 #cosmetics .btn {
-    padding: 5px 20px;
+    padding: .6rem 1.5rem;
+    width: 60%;
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 
 @media (max-width: 991.98px) {
