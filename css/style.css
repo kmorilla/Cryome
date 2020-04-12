@@ -308,7 +308,7 @@ ul {
 .diagonal-stripes {
     margin: 15px;    
     clip-path: polygon(100% 0, 0% 100%, 0 0);
-    background-image: repeating-linear-gradient(135deg, #621839, #621839 12px , transparent 12px, transparent 26px);
+    background-image: repeating-linear-gradient(135deg, #621839, #621839 8px , transparent 8px, transparent 22px);
 }
 
 .promo-box-container {
@@ -316,7 +316,7 @@ ul {
     top: 0;
     left: 0;
     height: 100%;
-    width: 100%;
+    width: 70%;
 }
 
 .promo-box {
@@ -329,7 +329,7 @@ ul {
 
 .promo-box p {
     margin-bottom: unset;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 @media (max-width: 991.98px) {
@@ -382,6 +382,14 @@ ul {
 
     .diagonal-stripes {
         margin: 0;
+    }
+
+    .promo-box-container {
+        width: 100%;
+    }
+
+    .promo-box {
+        width: 60%;
     }
 }
 
