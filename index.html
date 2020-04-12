@@ -11,7 +11,6 @@
 
     <link rel="stylesheet" href="css/owl.carousel.min.css">
 
-    <link rel="stylesheet" href="css/navbar.css">
     <link rel="shortcut icon" href="images/CryoMe-Logo-favicon2.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 
@@ -23,14 +22,60 @@
 <body>
 
     <!-- Navbar -->
-    <header class="header">
+
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">
+                <img src="images/cropped-CryoMe-Logo-sq2.png" alt="CryoMe Logo">
+            </a>
+            <form class="form-inline my-auto navbar-button-mobile">
+                <button class="btn my-auto my-sm-0">Book Now</button>
+            </form>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Services
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="#">Cryotherapy</a>
+                            <a class="dropdown-item" href="#">Massage</a>
+                            <a class="dropdown-item" href="#">Chiropractic</a>
+                            <a class="dropdown-item" href="#">Hyperbaric</a>
+                            <a class="dropdown-item" href="#">Infrared</a>
+                            <a class="dropdown-item" href="#">Compression</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <form class="form-inline my-auto navbar-button-large">
+                        <button class="btn my-auto my-sm-0">Book Now</button>
+                    </form>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- <header class="header">
         <nav class="navbar navbar-expand-lg fixed-top py-3">
             <div class="container">
                 <a href="#" class="navbar-brand text-uppercase font-weight-bold">
                     <img src="images/cropped-CryoMe-Logo-sq2.png" alt="" width="auto" height="50">
-                </a>
-                <!-- <div class="d-flex navbar-button"><button class="btn text-uppercase ml-auto">Book Now</button></div> -->
-                <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                </a> -->
+    <!-- <div class="d-flex navbar-button"><button class="btn text-uppercase ml-auto">Book Now</button></div> -->
+    <!-- <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                     class="navbar-toggler navbar-toggler-right"><i class="fa fa-bars"></i></button>
                 <div id="navbarSupportedContent" class="collapse navbar-collapse">
@@ -50,14 +95,14 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
 
     <!-- Home -->
     <section id="home">
-        <div class="jumbotron-fluid my-auto">
+        <div class="jumbotron-fluid">
             <div class="container d-flex align-items-center h-100">
                 <div class="row align-items-center">
-                    <div class="col-6 home-container pl-5">
+                    <div class="col-lg-6 col-sm-10 home-container">
                         <h1>Empowering Pain Relief &amp; Wellness</h1>
                         <h2>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
                             invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam
@@ -334,8 +379,6 @@
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
         </script>
 
-    <script src="js/navbar.js"></script>
-
     <script src="js/googlemap.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZ3sAL1iupV2j_ITRSCDpemAs_J2Xy0jk&callback=initMap">
     </script>
@@ -347,6 +390,7 @@
 
     <script src="js/reviews.js"></script>
     <script src="js/reviews-jquery.js"></script>
+
     <script src="js/main.js"></script>
 
     <script src="js/owl.js"></script>

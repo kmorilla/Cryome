@@ -3,6 +3,6 @@ FRED.init({
     perPage: 4,
     layout: "carousel",
     background: "transparent",
-    titleHexColor: "2B2F31",
-    starHexColor: "2B2F31",    
+    titleHexColor: "621839",
+    starHexColor: "183962",
 });
