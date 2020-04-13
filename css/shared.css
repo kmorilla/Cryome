@@ -1,0 +1,188 @@
+.border {
+    border: 2px solid red !important;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #454647;
+}
+
+h1 {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+h1,h3,h4,a {
+    text-transform: uppercase;
+}
+
+h1,h3 {
+    color: #fff;
+}
+
+h2 {
+    font-size: 1.6rem;
+    color: #ffffff;
+}
+
+h3 {
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: #621839;
+}
+
+h4{
+    font-size: 1.3rem;
+    color: #183962;
+}
+
+p {
+    font-size: 1.15rem;
+    line-height: 1.9rem;
+    margin-bottom: 0;
+}
+
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.padding {
+    padding: 5rem 0;
+}
+
+@media (max-width: 1199.98px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 991.98px) {
+    html {
+        font-size: 11.5px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    html {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    html {
+        font-size: 11.5px;        
+    }
+
+    .padding-mobile {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .margin-mobile {
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+/*-----------------------------
+            Navbar 
+ ------------------------------*/
+
+.navbar {
+    background-color: rgba(255, 255, 255, .96);
+}
+
+.navbar-brand img {
+    height: 6vh;
+    width: auto;
+}
+
+.navbar a {
+    color: #454647;
+}
+
+.navbar a:hover {
+    color: #621839;
+}
+
+.navbar li, .navbar form {
+    padding: 0 .5rem;
+}
+
+.navbar .btn {
+    text-transform: uppercase;
+}
+
+.navbar .dropdown-menu {
+    border: none;
+    background-color: rgba(255, 255, 255, .96);
+    padding: 0;
+}
+
+.navbar .dropdown-menu a:hover {
+    background-color: #E7EBEF;
+}
+
+.dropdown-item {
+    color: #454647;
+}
+
+.navbar .navbar-toggler {
+    color: #454647;
+    border: none;
+    font-size: 25px;
+}
+
+.navbar-button-mobile {
+    visibility: hidden;
+    display: none;
+    margin-left: auto;
+    margin-right: 2.5rem;
+} 
+
+@media (max-width: 991.98px) {
+    .navbar-button-mobile {
+        visibility: visible;
+        display: flex;
+    } 
+
+    .navbar-button-large {
+        visibility: hidden;
+        display: none;
+    }
+}
+
+
+/*-----------------------------
+            Button 
+ ------------------------------*/
+
+.btn {
+    background-color: #621839;
+    border-radius: unset;
+    padding: 5px 10px;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #621839;
+    border: 1px solid #621839;
+}
+
+.btn:focus {
+    box-shadow: unset;
+}
+
+
+/*-----------------------------
+            Footer 
+ ------------------------------*/
+
+.footer {
+    height: 130px;
+    background-color: #0E2139;
+}
