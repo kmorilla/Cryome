@@ -165,8 +165,8 @@
 .promo-box:hover {
     transition: .2s;
     background-color: #fff;
-    border: 2px solid #183962;
-    color: #183962;
+    border: 2px solid #621839;
+    color: #621839;
     text-decoration: none;
 }
 
@@ -487,10 +487,6 @@
             Contact 
  ------------------------------*/
 
-.contact-padding {
-    padding-top: 5rem;
-}
-
 #contact {
     position: relative;
     font-size: 16px;
@@ -602,23 +598,15 @@
             Reviews 
  ------------------------------*/
 
-#reviews {
-    height: 100%;
+.reviews-padding {
     padding-top: 5rem;
-    position: relative;
-    background-color: #E7EBEF;
 }
 
-#reviews::before {
-    content: "";
+#reviews {
     height: 100%;
-    width: 50%;
-    background-color: #fff;
-    position: absolute;
-    top: 0;
-    left: 50%;
-    clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
-    -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+    padding-top: 3rem;
+    position: relative;
+    background-color: #E7EBEF;
 }
 
 .fred {
@@ -628,7 +616,7 @@
 
 #reviews .fred iframe {
     min-height: 0 !important;
-    height: 400px !important;
+    height: 360px !important;
 }
 
 @media (max-width: 575.98px) {

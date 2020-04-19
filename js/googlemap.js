@@ -7,6 +7,7 @@ function initMap() {
         document.getElementById('map'), {
         zoom: 16,
         center: uluru,
+        streetViewControl: false
     }
     );
 
