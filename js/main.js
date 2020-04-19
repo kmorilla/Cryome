@@ -19,11 +19,15 @@ function setHeight(windowWidth) {
         $(".therapy-title-container").css(marginTB);
         $(".diagonal-stripes").css(marginLR);
         $(".diagonal-stripes").css(marginTB);
+        $(".promo-wrap").css(marginLR);
+        $(".promo-wrap").css(marginTB);
     }
     else {
         $(".therapy-title-container").css(marginZeroTB);
         $(".diagonal-stripes").css(marginZeroLR);
         $(".diagonal-stripes").css(marginZeroTB);
+        $(".promo-wrap").css(marginZeroLR);
+        $(".promo-wrap").css(marginZeroTB);
     }
 
     //--- .therapy height ---

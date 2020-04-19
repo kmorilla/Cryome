@@ -28,18 +28,22 @@
 
 .info-container-left::before {
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 70%);
 }
 
 .info-container-left::after {
     clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 }
 
 .info-container-right::before {
     clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
 
 .info-container-right::after {
     clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 30%, 100% 100%, 0 100%);
 }
 
 .info-container::before {
@@ -88,6 +92,12 @@
 
 .info {
     padding: 1.5rem 0;
+}
+
+@media (max-width: 767.98px) {
+    .jumbotron-fluid {
+        height: 45vh;
+    }
 }
 
 

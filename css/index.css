@@ -137,7 +137,7 @@
 .diagonal-stripes {
     margin: 15px;    
     clip-path: polygon(100% 0, 0% 100%, 0 0);
-    background-image: repeating-linear-gradient(135deg, #621839, #621839 8px , transparent 8px, transparent 22px);
+    background-image: repeating-linear-gradient(135deg, #2f4c71, #2f4c71 8px , transparent 8px, transparent 22px);
 }
 
 .promo-box-container {
@@ -148,8 +148,14 @@
     width: 100%;
 }
 
+.promo-wrap {
+    height: auto;
+    width: 100%;
+    display: flex;
+}
+
 .promo-box {
-    background-color: #183962;
+    background-color: #621839;
     color: #ffffff;
     padding: 1rem 1.5rem;
     width: 60%;  
@@ -161,6 +167,7 @@
     background-color: #fff;
     border: 2px solid #183962;
     color: #183962;
+    text-decoration: none;
 }
 
 .promo-box p {
@@ -198,6 +205,7 @@
         top: -40px;
         left: 0;
         clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
+        -webkit-clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
     }
 
     .therapy-title {
@@ -236,6 +244,8 @@
     width: 100%;
     background-color: #E7EBEF;
     clip-path: polygon(0 10%, 100% 10%, 100% 58%, 0 88%);
+    -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 58%, 0 88%);
+
 }
 
 .cosmetics-wrap {
@@ -255,6 +265,7 @@
 .contouring img {
     width: 100%;   
     clip-path: polygon(0 0, 100% 6%, 95% 84%, 5% 98%);
+    -webkit-clip-path: polygon(0 0, 100% 6%, 95% 84%, 5% 98%);
 }
 
 .contouring {
@@ -275,6 +286,7 @@
 @media (max-width: 991.98px) {
     .cosmetics-mask {        
         clip-path: polygon(0 10%, 100% 10%, 100% 53%, 0 81%);
+        -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 53%, 0 81%);
     }
 }
 
@@ -285,6 +297,7 @@
 
     .cosmetics-mask {        
         clip-path: polygon(0 13%, 100% 13%, 100% 53%, 0 81%);
+        -webkit-clip-path: polygon(0 13%, 100% 13%, 100% 53%, 0 81%);
     }
 
     .contouring-image-container {
@@ -605,6 +618,7 @@
     top: 0;
     left: 50%;
     clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(39% 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .fred {
