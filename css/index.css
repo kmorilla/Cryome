@@ -227,6 +227,10 @@
     .diagonal-stripes {
         margin: 0;
     }
+
+    .promo-box {
+        width: 80%;
+    }
 }
 
 
