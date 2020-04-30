@@ -39,6 +39,9 @@ h4{
 p {
     font-size: 1.15rem;
     line-height: 1.9rem;
+}
+
+p:last-child {
     margin-bottom: 0;
 }
 
