@@ -53,13 +53,13 @@ ol li {
             Services 
  ------------------------------*/
 
-.services-container {
+.services-container, .services-img-container {
     background-color: #E7EBEF;
     z-index: -10;
     position: relative;
 }
 
-.services-container::before {
+.services-container::before, .services-img-container::before {
     content: "";
     background-color: #fff;
     top: -1px;
@@ -69,10 +69,10 @@ ol li {
     width: 100%;
 }
 
-.services-container::after {
+.services-container::after, .services-img-container::after {
     content: "";
     background-color: #fff;
-    top: calc(100% - 6.5rem);
+    top: calc(100% - (6.5rem - 1px));
     left: 0;
     position: absolute;
     height: 6.5rem;
@@ -84,22 +84,22 @@ ol li {
     z-index: 100;
 }
 
-.services-container-left::before {
+.services-container-left::before, .services-img-container-right::before {
     clip-path: polygon(0 0, 100% 0, 100% 50%, 0 10%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 0 10%);
 }
 
-.services-container-left::after {
+.services-container-left::after, .services-img-container-left::after {
     clip-path: polygon(0 90%, 100% 50%, 100% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 90%, 100% 50%, 100% 100%, 0% 100%);
 }
 
-.services-container-right::before {
+.services-container-right::before, .services-img-container-left::before {
     clip-path: polygon(0 0, 100% 0, 100% 10%, 0 50%);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 10%, 0 50%);
 }
 
-.services-container-right::after {
+.services-container-right::after, .services-img-container-right::after {
     clip-path: polygon(0 50%, 100% 90%, 100% 100%, 0% 100%);
     -webkit-clip-path: polygon(0 50%, 100% 90%, 100% 100%, 0% 100%);
 }
@@ -107,6 +107,7 @@ ol li {
 .services-info {
     padding-top: 6rem;
     padding-bottom: 4rem;
+    z-index: 1000;
 }
 
 .summary {
@@ -123,6 +124,48 @@ ol li {
 .summary-info h4 {
     color: #fff;
 }
+
+.services-img-container img {
+    height: auto;
+    width: 275px;
+}
+
+
+#therapy2 .services-img-1 {
+    background-image: url("../images/mara-ket-17yojkc2so4-unsplash.jpg");
+}
+
+#therapy2 .services-img-2 {
+    background-image: url("../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg");
+}
+
+
+.services-img {
+    height: 180px;
+    width: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 5px;
+}
+
+.owl-prev {
+    left: calc((100% - 1140px) / 2);
+    position: absolute;
+    top: 7rem;
+}
+
+.owl-next {
+    position: absolute;
+    left: calc(((100% - 1140px) / 2) + 1140px - 1.1rem);
+    top: 7rem;
+}
+
+.owl-prev i, .owl-next i {
+    font-size: 2.2rem;
+    color: #454647;
+}
+
 
 
 @media (min-width: 576px) {
