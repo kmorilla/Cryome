@@ -55,7 +55,6 @@ ol li {
 
 .services-container, .services-img-container {
     background-color: #E7EBEF;
-    z-index: -10;
     position: relative;
 }
 
@@ -77,11 +76,6 @@ ol li {
     position: absolute;
     height: 6.5rem;
     width: 100%;
-    z-index: -1;
-}
-
-.services-info {
-    z-index: 100;
 }
 
 .services-container-left::before, .services-img-container-right::before {
@@ -104,10 +98,13 @@ ol li {
     -webkit-clip-path: polygon(0 50%, 100% 90%, 100% 100%, 0% 100%);
 }
 
+.services-z {
+    z-index: 1;
+}
+
 .services-info {
     padding-top: 6rem;
     padding-bottom: 4rem;
-    z-index: 1000;
 }
 
 .summary {
@@ -130,18 +127,8 @@ ol li {
     width: 275px;
 }
 
-
-#therapy2 .services-img-1 {
-    background-image: url("../images/mara-ket-17yojkc2so4-unsplash.jpg");
-}
-
-#therapy2 .services-img-2 {
-    background-image: url("../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg");
-}
-
-
 .services-img {
-    height: 180px;
+    height: 200px;
     width: auto;
     background-position: center;
     background-repeat: no-repeat;
@@ -149,16 +136,43 @@ ol li {
     margin: 0 5px;
 }
 
+#therapy1 .services-img-1 {
+    background-image: url("../images/mara-ket-17yojkc2so4-unsplash.jpg");
+}
+
+#therapy1 .services-img-2 {
+    background-image: url("../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg");
+}
+
+#therapy2 .services-img-1 {
+    background-image: url("../images/alex-block-3YlNd_1FVlo-unsplash.jpg");
+}
+
+#therapy2 .services-img-2 {
+    background-image: url("../images/noah-buscher-eCJiD00AJqs-unsplash.jpg");
+}
+
+#therapy2 .services-img-3 {
+    background-image: url("../images/anthony-tran-Sd9A6NVHsd4-unsplash.jpg");
+}
+
+#therapy2 .services-img-4 {
+    background-image: url("../images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
+}
+
+
+
+
 .owl-prev {
-    left: calc((100% - 1140px) / 2);
+    left: -2%;
     position: absolute;
-    top: 7rem;
+    top: calc(100px - 1.1rem);
 }
 
 .owl-next {
     position: absolute;
-    left: calc(((100% - 1140px) / 2) + 1140px - 1.1rem);
-    top: 7rem;
+    left: 100%;
+    top: calc(100px - 1.1rem);
 }
 
 .owl-prev i, .owl-next i {
@@ -177,5 +191,3 @@ ol li {
         justify-content: flex-end;
     }
 }
-
-
