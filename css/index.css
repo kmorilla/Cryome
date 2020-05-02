@@ -75,7 +75,6 @@
 
 #services {
     text-align: center;
-    padding-bottom: 5rem;
 }
 
 .therapy-title-container, .therapy-items {
@@ -89,11 +88,7 @@
 .therapy-title-container {
     background-color: #E7EBEF;
     height: 100%;
-    padding-top: 5rem;
-}
-
-.therapy-title {
-    margin: 0 3rem;
+    padding: 2rem 0;  
 }
 
 .therapy-title p {
@@ -107,7 +102,7 @@
 
 .therapy {    
     background-color: #E7EBEF;        
-    margin: 0 auto;
+    margin: auto;
     width: 30%;
     color: #E7EBEF;
     padding: 1rem;
@@ -127,23 +122,24 @@
 
 .therapy-items i {
     font-size: 2.3rem;
-    padding-bottom: 20px;
+    padding-bottom: 1rem;
 }
 
+
 .diagonal-stripes-row {
-    position: relative;
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
 }
 
 .diagonal-stripes {       
     background-image: repeating-linear-gradient(127deg, #fff -1px, #2f4c71 0px, #2f4c71 3px , transparent 4px, transparent 21px);
     width: 100%;
+    z-index: 0;
 }
 
 .diagonal-stripes::before {
     clip-path: polygon(50% 0, 100% 0, 100% 100%, 25% 100%);
+    -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 25% 100%);
     content: "";
     position: absolute;
     top: 0;
@@ -151,20 +147,12 @@
     background-color: #fff;
     height: 100%;
     width: 100%;
+    z-index: -1;
 }
 
 .promo-box-container {
-    position: absolute;
-    top: 0;
-    left: 0;
     height: 100%;
     width: 100%;
-}
-
-.promo-wrap {
-    height: auto;
-    width: 100%;
-    display: flex;
 }
 
 .promo-box {
@@ -188,25 +176,17 @@
     font-size: 1.2rem;
 }
 
-@media (max-width: 991.98px) {
-    .therapy-title {
-        margin: 0 2rem;
-    }    
+@media (min-width: 576px) {
+    .diagonal-stripes::before {
+        clip-path: polygon(50% 0, 100% 0, 100% 100%, 35% 100%);
+        -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 35% 100%);
+    }
 }
 
+
 @media (max-width: 575.98px) {
-    #services .padding {
-        padding-top: 0;
-    }
-
-    #services .container-sm .row {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     .therapy-title-container {
-        background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%);
-        padding: 2.5rem;        
+        background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%);      
     }
 
     .therapy-title-container::before {
@@ -221,24 +201,12 @@
         -webkit-clip-path: polygon(0 0, 100% 100%, 100% 100%, 0% 100%);
     }
 
-    .therapy-title {
-        margin: 0 4rem;
-    }   
-
     .therapy-items-container {
         background-color: #E7EBEF;
     }
 
-    .therapy-items {
-        margin: 5px; 
-    }
-
     .therapy {
         border: 2px solid #fff;
-    }
-
-    .diagonal-stripes {
-        margin: 0;
     }
 }
 

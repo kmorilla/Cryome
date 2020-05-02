@@ -51,9 +51,14 @@ ul {
     margin: 0px;
 }
 
+.padding-bottom {
+    padding-bottom: 5rem;
+}
+
 .padding {
     padding: 5rem 0;
 }
+
 
 @media (max-width: 1199.98px) {
     html {
