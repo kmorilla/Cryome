@@ -130,15 +130,20 @@
     padding-bottom: 20px;
 }
 
-.diagonal-stripes-row{
+.diagonal-stripes-row {
     position: relative;
+    display: flex;
+    flex-wrap: wrap;
     width: 100%;
 }
 
-.diagonal-stripes {
-    margin: 15px;    
-    clip-path: polygon(100% 0, 0% 100%, 0 0);
+.diagonal-stripes {       
     background-image: repeating-linear-gradient(135deg, #2f4c71, #2f4c71 8px , transparent 8px, transparent 22px);
+    width: 100%;
+}
+
+.diagonal-stripes::before {
+    clip-path: polygon(100% 0, 0% 100%, 0 0);
 }
 
 .promo-box-container {

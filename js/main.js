@@ -40,8 +40,8 @@ function setHeight(windowWidth) {
     //--- diagonal-stripes ---
     var therapyHeight = $(".therapy").outerHeight(true);
 
-    $(".diagonal-stripes").height(therapyHeight * 1.5);
-    $(".diagonal-stripes").width(therapyHeight * 1.5);
+    $(".diagonal-stripes").height(therapyHeight * 1);
+    // $(".diagonal-stripes").width(therapyHeight * 1.5);
 
 
     //--- cosmetics height ---
