@@ -138,12 +138,19 @@
 }
 
 .diagonal-stripes {       
-    background-image: repeating-linear-gradient(135deg, #2f4c71, #2f4c71 8px , transparent 8px, transparent 22px);
+    background-image: repeating-linear-gradient(127deg, #fff -1px, #2f4c71 0px, #2f4c71 3px , transparent 4px, transparent 21px);
     width: 100%;
 }
 
 .diagonal-stripes::before {
-    clip-path: polygon(100% 0, 0% 100%, 0 0);
+    clip-path: polygon(50% 0, 100% 0, 100% 100%, 25% 100%);
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
 }
 
 .promo-box-container {
@@ -163,7 +170,7 @@
 .promo-box {
     background-color: #621839;
     color: #ffffff;
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 1.5rem;
     width: 80%;  
     margin: auto; 
 }
