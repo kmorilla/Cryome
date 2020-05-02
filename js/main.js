@@ -4,7 +4,7 @@ function setHeight(windowWidth) {
     //--- services margins ---
 
     var totalWidth = $(".therapy").outerWidth(true);
-    var shortWidth = $(".therapy").width();
+    var shortWidth = $(".therapy").outerWidth();
     var marginHeight = (totalWidth - shortWidth) / 2;
 
     var marginTB = { marginTop: marginHeight, marginBottom: marginHeight };
