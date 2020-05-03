@@ -263,11 +263,11 @@
 }
 
 .cosmetics-container::before {
-    clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
-    -webkit-clip-path: polygon(100% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(0 99%, 100% 0, 100% 100%, 0 100%);
+    -webkit-clip-path: polygon(0 99%, 100% 0, 100% 100%, 0 100%);
     content: "";
     position: absolute;
-    bottom: 0;
+    top: calc(100% - 10rem + 1px) ;
     left: 0;
     height: 10rem;
     width: 100%;
@@ -312,21 +312,20 @@
     text-transform: uppercase;
 }
 
-@media (max-width: 991.98px) {
-    .cosmetics-mask {        
-        clip-path: polygon(0 10%, 100% 10%, 100% 53%, 0 81%);
-        -webkit-clip-path: polygon(0 10%, 100% 10%, 100% 53%, 0 81%);
-    }
-}
-
 @media (max-width: 575.98px) {
     #cosmetics {
         text-align: center;      
     }
 
-    .cosmetics-mask {        
-        clip-path: polygon(0 13%, 100% 13%, 100% 53%, 0 81%);
-        -webkit-clip-path: polygon(0 13%, 100% 13%, 100% 53%, 0 81%);
+    #cosmetics h3, #cosmetics p {
+        color: #fff;
+    }
+
+    .cosmetics-container {
+        background: linear-gradient(rgba(24, 57, 98, .75), rgba(24, 57, 98, .75)), url("../images/slim-waist.jpg");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     .contouring-image-container {
@@ -338,8 +337,8 @@
         padding-top: 0;
     }
 
-    .contouring-info p {
-        padding: 0 2.5em;
+    #cosmetics .btn {
+        width: 45%;
     }
 }
 
