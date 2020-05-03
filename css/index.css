@@ -86,17 +86,14 @@
     text-align: center;
 }
 
-.therapy-title-container {
-    justify-content: center;
-}
-
 .therapy-title-container, .therapy-items-container, .therapy-items, .therapy, .promo-box-container {
     display: flex;
 }
 
 .therapy-title-container {
     background-color: #E7EBEF;
-    padding: 1rem;     
+    padding: 1.5rem; 
+    justify-content: center;    
 }
 
 .therapy-title p {
@@ -192,6 +189,7 @@
         clip-path: polygon(50% 0, 100% 0, 100% 100%, 37% 100%);
         -webkit-clip-path: polygon(50% 0, 100% 0, 100% 100%, 37% 100%);
     }
+
 }
 
 @media (max-width: 991.98px) {
@@ -206,17 +204,22 @@
         clip-path: polygon(52% 0, 100% 0, 100% 100%, 37% 100%);
         -webkit-clip-path: polygon(52% 0, 100% 0, 100% 100%, 37% 100%);
     }
+
+    .therapy-title p {
+        margin-top: 1rem;
+    }
 }
 
 @media (min-width: 576px) {
     .promo-box {
-        width: 60%;
+        width: 55%;
     }
 }
 
 @media (max-width: 575.98px) {
     .therapy-title-container {
         background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%); 
+        padding: 2rem 2.5rem;     
     }
 
     .therapy-title-container::before {
@@ -249,6 +252,10 @@
 /*-----------------------------
             Cosmetics 
  ------------------------------*/
+
+#cosmetics h3 {
+    margin: 0;
+}
 
 .cosmetics-container {
     background-color: #E7EBEF;
