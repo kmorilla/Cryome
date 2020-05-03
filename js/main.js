@@ -5,29 +5,23 @@ function setHeight(windowWidth) {
 
     var totalWidth = $(".therapy").outerWidth(true);
     var shortWidth = $(".therapy").outerWidth();
-    var marginHeight = (totalWidth - shortWidth) / 2;
+    var marginHeight = (totalWidth - shortWidth);
 
-    var marginTB = { marginTop: marginHeight, marginBottom: marginHeight };
+    var marginTB = { marginTop: marginHeight / 2, marginBottom: marginHeight / 2 };
     var marginLR = { marginLeft: marginHeight, marginRight: marginHeight };
-
-    $(".therapy").css(marginTB);
 
     var marginZeroTB = { marginTop: 0, marginBottom: 0 };
     var marginZeroLR = { marginLeft: 0, marginRight: 0 };
 
     if (windowWidth > 576) {
-        $(".therapy-title-container").css(marginTB);
-        $(".diagonal-stripes").css(marginLR);
-        $(".diagonal-stripes").css(marginTB);
-        $(".promo-wrap").css(marginLR);
-        $(".promo-wrap").css(marginTB);
+        $(".diagonal-stripes-row").css("marginTop", marginHeight);
+        $(".therapy").css(marginZeroTB);
+        $(".therapy-top").css("marginTop", marginHeight);
     }
     else {
+        $(".diagonal-stripes-row").css(marginZeroTB);
         $(".therapy-title-container").css(marginZeroTB);
-        $(".diagonal-stripes").css(marginZeroLR);
-        $(".diagonal-stripes").css(marginZeroTB);
-        $(".promo-wrap").css(marginZeroLR);
-        $(".promo-wrap").css(marginZeroTB);
+        $(".therapy").css(marginTB);
     }
 
     //--- .therapy height ---
@@ -40,7 +34,7 @@ function setHeight(windowWidth) {
     //--- diagonal-stripes ---
     var therapyHeight = $(".therapy").outerHeight(true);
 
-    $(".diagonal-stripes").height(therapyHeight * 1);
+    // $(".diagonal-stripes").height(therapyHeight * 1);
     // $(".diagonal-stripes").width(therapyHeight * 1.5);
 
 
