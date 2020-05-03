@@ -18,7 +18,7 @@
 }
 
 #home .row {
-    background-color: rgba(24, 57, 98, .9);
+    background-color: rgba(24, 57, 98, .75);
     clip-path: polygon(0 0, 50% 0, 60% 100%, 0% 100%);
     height: 75%;
 }
@@ -36,7 +36,6 @@
 
 @media (max-width: 991.98px) {
     #home .row {
-        background-color: rgba(24, 57, 98, .75);
         clip-path: unset;
         text-align: center;
         width: 100%;
@@ -52,13 +51,23 @@
     }
 }
 
+@media (max-width: 991.98px) {
+    #home {
+        height: 65vh;
+    }
+}
+
 @media (max-width: 767.98px) {
     #home {
-        height: 80vh;
+        height: 55vh;
     }
 }
 
 @media (max-width: 575.98px) {
+    #home {
+        height: 80vh;
+    }
+
     #home .row {
         width: 95%;
     }    
@@ -87,11 +96,11 @@
 
 .therapy-title-container {
     background-color: #E7EBEF;
-    padding: 2rem;     
+    padding: 1rem;     
 }
 
 .therapy-title p {
-    margin-top: 2.9rem;
+    margin-top: 1.5rem;
     font-size: 1.2rem;
 }
 
@@ -201,7 +210,7 @@
 
 @media (min-width: 576px) {
     .promo-box {
-        width: 45%;
+        width: 60%;
     }
 }
 
@@ -228,10 +237,6 @@
 
     .therapy {
         border: 2px solid #fff;
-    }
-
-    .diagonal-stripes {
-        border: 0;
     }
 
     .diagonal-stripes::before {
