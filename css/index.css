@@ -317,17 +317,6 @@
         text-align: center;      
     }
 
-    #cosmetics h3, #cosmetics p {
-        color: #fff;
-    }
-
-    .cosmetics-container {
-        background: linear-gradient(rgba(24, 57, 98, .75), rgba(24, 57, 98, .75)), url("../images/slim-waist.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-
     .contouring-image-container {
         display: none;
         visibility: hidden;
@@ -483,6 +472,44 @@
 
 
 /*-----------------------------
+            Reviews 
+ ------------------------------*/
+
+ .reviews-padding {
+    padding-top: 5rem;
+}
+
+#reviews {
+    height: 100%;
+    padding-top: 3rem;
+    position: relative;
+    background-color: #E7EBEF;
+}
+
+.fred {
+    height: 100%;
+    width: 100%;
+}
+
+#reviews .fred iframe {
+    min-height: 0 !important;
+    height: 360px !important;
+}
+
+@media (max-width: 575.98px) {
+    .fred {
+        height: 450px;
+    }
+
+    #reviews .fred iframe {
+        min-height: 0 !important;
+        height: 400px !important;
+    }
+}
+
+
+
+/*-----------------------------
             Contact 
  ------------------------------*/
 
@@ -496,11 +523,14 @@
     height: 500px;
 }
 
-#contact h4 {
+#contact a, #contact i {
+    font-size: 1.15rem;
+}
+
     font-size: 1.3em;
 }
 
-#contact p {
+#contact p, #contact a, #contact i {
     line-height: 1.5em;
     font-size: 1em;
 }
@@ -508,7 +538,6 @@
 .map-info-container {
     position: absolute;
     top:0;
-    right: calc((100% - 1140px) / 2);
     height: 100%;
     display: flex;
 }
@@ -531,22 +560,26 @@
     padding-left: .5rem;
 }
 
-.map-info h4, .map-info p {
+.map-info h4, .map-info p, .map-info a, .map-info i {
     color: #fff;
 }
 
-.map-location p:last-child {
-    margin-bottom: 0;
+.map-location a {
+    text-transform: none;
 }
 
-@media (max-width: 1199.98px) {
-    #contact {
-        font-size: 14px;
+.map-location a:hover {
+    color: #E7EBEF;
+    cursor: pointer;    
+}
+
     }
 
     .map-info-container {
-        right: calc((100% - 960px) / 2);
-    }    
+        left: 45%;
+    }
+} */
+
 }
 
 @media (max-width: 991.98px) {
@@ -558,9 +591,7 @@
         height: 400px;
     }
 
-    .map-info-container {
-        right: calc((100% - 720px) / 4);
-    }  
+
 }
 
 @media (max-width: 767.98px) {
@@ -593,33 +624,3 @@
 
 
 
-/*-----------------------------
-            Reviews 
- ------------------------------*/
-
-.reviews-padding {
-    padding-top: 5rem;
-}
-
-#reviews {
-    height: 100%;
-    padding-top: 3rem;
-    position: relative;
-    background-color: #E7EBEF;
-}
-
-.fred {
-    height: 100%;
-    width: 100%;
-}
-
-#reviews .fred iframe {
-    min-height: 0 !important;
-    height: 360px !important;
-}
-
-@media (max-width: 575.98px) {
-    .fred {
-        height: 450px;
-    }
-}
