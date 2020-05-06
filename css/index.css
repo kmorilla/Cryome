@@ -515,7 +515,18 @@
 
 #contact {
     position: relative;
-    font-size: 16px;
+}
+
+#contact h3, .contact-info div a, #contact p {
+    color: #fff;
+}
+
+#contact a {
+    text-transform: none;
+}
+
+#contact a:hover {
+    text-decoration: none;
 }
 
 #map {
@@ -525,14 +536,6 @@
 
 #contact a, #contact i {
     font-size: 1.15rem;
-}
-
-    font-size: 1.3em;
-}
-
-#contact p, #contact a, #contact i {
-    line-height: 1.5em;
-    font-size: 1em;
 }
 
 .map-info-container {
@@ -546,81 +549,67 @@
     background-color: rgba(24, 57, 98, .9);
     margin: auto 0;
     display: flex;
+    padding: 1.5rem 2.5rem;
 }
 
-.map-location {
-    padding-right: 1.5rem;
+.contact-header {
+    padding-bottom: 1rem;
 }
 
-.map-contact {
-    padding-top: .5rem;
+.contact-info {
+    display: flex;
+    padding-bottom: 1rem;
+    min-height: 4.5rem;
 }
 
-.map-hours {
-    padding-left: .5rem;
+.contact-info:last-child {
+    padding-bottom: 0;
 }
 
-.map-info h4, .map-info p, .map-info a, .map-info i {
+.contact-info div {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.contact-info div a:hover {
+    color: #621839;
+}
+
+.icon {
+    width: 2.5rem;    
+    height: 2.5rem;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    margin: auto 1.5rem auto 0;
+    color: #183962;
+}
+
+.icon-anchor:hover {
+    background-color: #621839;
     color: #fff;
 }
 
-.map-location a {
-    text-transform: none;
+.icon i {
+    margin: auto;
 }
 
-.map-location a:hover {
-    color: #E7EBEF;
-    cursor: pointer;    
-}
-
-    }
-
-    .map-info-container {
-        left: 45%;
-    }
-} */
-
-}
-
-@media (max-width: 991.98px) {
-    #contact {
-        font-size: 13px;
-    }
-
-    #map {
-        height: 400px;
-    }
-
-
-}
 
 @media (max-width: 767.98px) {
-    #contact {
-        font-size: 12px;
-    }
-
     #map {
-        height: 450px;
+        height: 420px;
     }
-
-    .map-info-container {
-        height: unset;
-        top: unset;
-        bottom: 20px;
-        right: 0;  
-        width: fit-content;    
-    }
-
-    .map-info {
-        margin: 0 auto;
-    }    
 }
 
 @media (max-width: 575.98px) {
-    #contact {
-        font-size: 11px;        
+    #map {
+        height: 575px;
+    }
+
+    .map-info-container {
+        display: block;
+        height: unset;
+        bottom: 15px;
+        top: unset;
     }
 }
-
-
-

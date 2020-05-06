@@ -30,23 +30,19 @@ function setHeight(windowWidth) {
 
     $(".therapy").height(therapyWidth);
 
-    //--- cosmetics height ---
-    var cosmeticsHeight = $(".cosmetics-wrap").height();
 
-    $(".cosmetics-mask").height(cosmeticsHeight);
-}
+    //--- contact box ---
 
-function findWidth(windowWidth) {
-    var mapWidth = $(".map-info").outerWidth();
-    var newLeft = ((windowWidth - mapWidth) / 2);
+    var contactWidth = $(".map-info").outerWidth();
+    var newLeft = (windowWidth - contactWidth) / 2;
 
-    if (windowWidth < 768) {
+    if (windowWidth < 576) {
         $(".map-info-container").css("left", newLeft);
-    } else {
-        $(".map-info-container").css("left", "");
+    }
+    else {
+        $(".map-info-container").css("left", "55%");
     }
 }
-
 
 $(document).ready(function () {
     var windowWidth = $(window).outerWidth();

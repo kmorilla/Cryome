@@ -55,6 +55,10 @@ ul {
     padding-bottom: 5rem;
 }
 
+.padding-top {
+    padding-top: 5rem;
+}
+
 .padding {
     padding: 5rem 0;
 }
@@ -190,7 +194,43 @@ ul {
             Footer 
  ------------------------------*/
 
-.footer {
-    height: 130px;
+footer {
     background-color: #0E2139;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+footer a, footer p {
+    color: #fff;
+}
+
+footer a:hover {
+    color: #621839;
+}
+
+footer i {
+    font-size: 2rem;
+}
+
+footer p {
+    font-size: .9rem;
+}
+
+.footer-info {
+    display: flex;
+}
+
+.kevyn {
+    text-align: right;
+}
+
+@media (max-width: 575.98px) {
+    .kevyn {
+        text-align: center;
+    }
+
+    .footer-info {
+        margin: 0 auto;
+        width: fit-content;
+    }
 }
