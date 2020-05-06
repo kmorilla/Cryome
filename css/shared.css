@@ -234,3 +234,32 @@ footer p {
         width: fit-content;
     }
 }
+
+
+
+/*-----------------------------
+            Owl Icons
+ ------------------------------*/
+
+.owl-prev {
+    left: 0;
+}
+
+.owl-next {
+    right: 0;
+}
+
+.owl-prev i, .owl-next i {
+    font-size: 2.2rem;
+    color: #183962;
+    margin: auto;
+}
+
+.owl-prev, .owl-next {
+    background-color: #fff !important;
+    display: flex;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+    position: absolute;
+}
