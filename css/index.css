@@ -125,6 +125,9 @@
 
     .home-promo-container {
         margin-top: 3rem;
+    }
+
+    .home-promo {
         background-color: #E7EBEF;
     }
 
@@ -375,7 +378,7 @@
 
 #cosmetics .btn {
     padding: .6rem 1.5rem;
-    width: 60%;
+    width: 50%;
     font-size: 1.2rem;
     text-transform: uppercase;
 }
