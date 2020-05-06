@@ -22,6 +22,7 @@
 
 #home .row {
     clip-path: unset;
+    -webkit-clip-path: unset;
     text-align: center;
     width: 100%;
     display: flex;
