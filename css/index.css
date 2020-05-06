@@ -5,7 +5,10 @@
  #home {
     height: 100vh; 
     width: 100%;
-    display: flex;
+}
+
+#home h1 {
+    padding-bottom: 2.5rem;
 }
 
 .jumbotron-fluid {
@@ -31,7 +34,7 @@
     height: 75%;
 }
 
-.promo {
+.home-promo {
     background-color: rgba(231, 235, 239, .8);
     text-align: center;
     padding: 1.5rem 1.5rem;
@@ -56,12 +59,13 @@
         margin: auto 15px;
     }
 
-    #home h1 {
-        padding-bottom: 3.2rem;
+    .home-container {
+        padding-left: 3rem;
     }
 
-    .home-container {
-        padding-left: 2rem;
+    .home-promo-mobile {
+        display: none;
+        visibility: hidden;
     }
 }
 
@@ -88,16 +92,35 @@
 
 @media (max-width: 575.98px) {
     #home {
-        height: 80vh;
+        height: auto;
+        padding-bottom: 9rem;
+    }
+
+    #home .jumbotron-fluid {
+        margin-top: 6.5rem;
+        margin-bottom: 3rem;
     }
 
     #home .row {
-        width: 95%;
+        background-color: transparent;
     }    
 
     .home-container {
-        padding: 0 2.5rem;
+        padding: 5rem 2.5rem;
+        background-color: rgba(24, 57, 98, .75);   
+        margin: 0 15px;     
     }
+
+    .home-promo-container {
+        margin-top: 3rem;
+        background-color: #E7EBEF;
+    }
+
+    .home-promo-container {
+        display: none;
+        visibility: hidden;
+    }
+    
 }
 
 
@@ -242,7 +265,7 @@
 @media (max-width: 575.98px) {
     .therapy-title-container {
         background: linear-gradient(90deg, #E7EBEF 50%, transparent 50%); 
-        padding: 2rem 2.5rem;     
+        padding: 3rem 4rem;     
     }
 
     .therapy-title-container::before {
