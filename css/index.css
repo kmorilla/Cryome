@@ -69,9 +69,21 @@
     }
 }
 
+@media (max-width: 1199.98px) {
+    #home {
+        height: 100vh;
+    }
+}
+
+@media (min-width: 767.98px) and (orientation: portrait) {
+    #home {
+        height: 65vh;
+    }
+}
+
 @media (max-width: 991.98px) {
     #home {
-        height: 85vh;
+        height: 75vh;
     }
 }
 
@@ -132,7 +144,7 @@
     text-align: center;
 }
 
-.therapy-title-container, .therapy-items-container, .therapy-items, .therapy, .promo-box-container {
+.therapy-title-container, .therapy-items-container, .therapy-items, .therapy, .services-promo-box-container {
     display: flex;
 }
 
@@ -144,7 +156,7 @@
 
 .therapy-title p {
     margin-top: 1.5rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .therapy-items {
@@ -169,6 +181,10 @@
 .therapy-items .therapy div {
     margin: auto;
     color: #454647;
+}
+
+.therapy-items h4 {
+    margin-bottom: 0;
 }
 
 .therapy-items i {
@@ -204,20 +220,20 @@
     z-index: -1;
 }
 
-.promo-box-container {
+.services-promo-box-container {
     height: 100%;
     width: 100%;
 }
 
-.promo-box {
+.services-promo-box {
     background-color: #621839;
     color: #ffffff;
     padding: 1.5rem 1.5rem;
-    width: 75%;  
+    width: 100%;  
     margin: auto; 
 }
 
-.promo-box:hover {
+.services-promo-box:hover {
     transition: .2s;
     background-color: #fff;
     outline: 1px solid #621839;
@@ -225,9 +241,9 @@
     text-decoration: none;
 }
 
-.promo-box p {
+.services-promo-box p {
     margin-bottom: unset;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 @media (min-width: 992px) {
@@ -257,8 +273,8 @@
 }
 
 @media (min-width: 576px) {
-    .promo-box {
-        width: 55%;
+    .services-promo-box {
+        width: 45%;
     }
 }
 
@@ -286,6 +302,12 @@
 
     .therapy {
         border: 2px solid #fff;
+        padding: .5rem;
+    }
+
+    .therapy-items i {
+        font-size: 1.5rem;
+        padding-bottom: .5rem;
     }
 
     .diagonal-stripes::before {
@@ -373,7 +395,7 @@
     }
 
     #cosmetics .btn {
-        width: 45%;
+        width: 55%;
     }
 }
 
@@ -544,7 +566,7 @@
 
 @media (max-width: 575.98px) {
     .fred {
-        height: 450px;
+        height: 420px;
     }
 
     #reviews .fred iframe {
@@ -598,13 +620,8 @@
     padding: 1.5rem 2.5rem;
 }
 
-.contact-header {
-    padding-bottom: 1rem;
-}
-
 .contact-info {
     display: flex;
-    padding-bottom: 1rem;
     min-height: 4.5rem;
 }
 
@@ -657,5 +674,17 @@
         height: unset;
         bottom: 15px;
         top: unset;
+    }
+
+    .map-info {
+        background-color: rgba(24, 57, 98, .9);
+        margin: auto 0;
+        display: flex;
+        padding: 1.5rem 1.5rem;
+    }
+    
+
+    .contact-info {
+        min-height: 4rem;
     }
 }

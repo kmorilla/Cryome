@@ -31,7 +31,7 @@ function locationSet(map, uluru) {
     map.setCenter(uluru);
 
     if (windowWidth < 576) {
-        map.panBy(0, 100);
+        map.panBy(0, 120);
         map.setZoom(15);
     } else {
         map.panBy(200, 0);
