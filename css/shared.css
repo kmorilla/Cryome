@@ -8,7 +8,7 @@ body {
 }
 
 h1 {
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 700;
 }
 
@@ -26,7 +26,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.9rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: #621839;
 }
@@ -52,7 +52,7 @@ ul {
 }
 
 .padding-bottom {
-    padding-bottom: 5rem;
+    margin-bottom: 5rem;
 }
 
 .padding-top {
@@ -263,3 +263,8 @@ footer p {
     border-radius: 50%;
     position: absolute;
 }
+
+.owl-prev:focus, .owl-next:focus {
+    outline: none;
+}
+

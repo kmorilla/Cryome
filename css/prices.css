@@ -1,0 +1,167 @@
+ol {
+    padding-left: 1.5rem;
+}
+
+ol:last-child {
+    margin-bottom: 0;
+}
+
+ol li {
+    list-style: disc;
+    padding-left: 0;
+    margin-bottom: .5rem;
+}
+
+
+/*-----------------------------
+            Home 
+ ------------------------------*/
+
+.jumbotron-fluid {
+    background: linear-gradient(#fff 10%, transparent 10%, transparent 90%, #fff 90%), url(../images/martin-balle-E2XN8sHBHSY-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 6.5rem;
+}
+
+#home .container {
+    background-color: rgba(24, 57, 98, .8);
+    width: 100%;
+    height: 100%;
+}
+
+.jumbotron-fluid .row .col-10 {
+    height: 100%;
+}
+
+#home h1 {
+    padding: 9rem 0;
+}
+
+
+/*-----------------------------
+            Promo 
+ ------------------------------*/
+
+.prices-promo {
+    text-align: center;
+    margin: 0 auto;
+    background-color: #E7EBEF;
+    padding: 2rem;
+}
+
+
+
+/*-----------------------------
+            Membership 
+ ------------------------------*/
+
+.membership-background {
+    background-color: #183962;
+    padding-top: 2rem;
+    position: relative;
+}
+
+.membership-background::before {
+    clip-path: polygon(0 81%, 100% 0, 100% 100%, 0% 100%);
+    -webkit-clip-path: polygon(0 81%, 100% 0, 100% 100%, 0% 100%);
+    content: "";
+    background-color: #fff;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+    height: 20rem;
+}
+
+#membership h3, #membership h4 {
+    padding-bottom: .5rem;
+}
+
+.pack {
+    background-color: #E7EBEF;
+    text-align: center;
+    padding: 2rem;
+}
+
+.pack-after {
+    margin: 2rem 0;
+}
+
+.price {
+    font-size: 1.5rem;
+}
+
+.membership-price {
+    display: inline-flex;
+}
+
+.membership-price h4 {
+    margin-right: .5rem;
+}
+
+.benefits {
+    margin-top: 1.5rem;
+}
+
+.list-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.list-container-membership {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.list {
+    display: flex;
+}
+
+
+/*-----------------------------
+            Prices 
+ ------------------------------*/
+
+ .prices-background {
+    background-color: #E7EBEF;
+    padding: 2rem 0;
+}
+
+#prices ol {
+    width: 100%;
+    padding-left: 2.5rem;
+}
+
+#prices p {
+    line-height: normal;
+    margin-bottom: .5rem;
+}
+
+.price-category {
+    margin: 1.5rem 0;
+}
+
+.price-category h4 {
+    margin-bottom: 1rem;
+}
+
+.prices-list {
+    display: flex;
+}
+
+.prices-price {
+    margin-left: auto;
+    color: #621839;
+}
+
+.sub-list {
+    list-style: none;
+}
+
+.sub-list p:first-child {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}

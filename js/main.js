@@ -48,7 +48,6 @@ $(document).ready(function () {
     var windowWidth = $(window).outerWidth();
 
     setHeight(windowWidth);
-    findWidth(windowWidth);
 })
 
 
@@ -56,7 +55,6 @@ $(window).resize(function () {
     var windowWidth = $(window).outerWidth();
 
     setHeight(windowWidth);
-    findWidth(windowWidth);
 })
 
 

@@ -17,36 +17,28 @@ ol li {
             Home 
  ------------------------------*/
 
-.jumbotron-fluid {
-    background: linear-gradient(#fff 25%, transparent 25%, transparent 75%, #fff 75%), url(../images/martin-balle-E2XN8sHBHSY-unsplash.jpg);
-    height: 60vh;
+ .jumbotron-fluid {
+    background: linear-gradient(#fff 10%, transparent 10%, transparent 90%, #fff 90%), url(../images/martin-balle-E2XN8sHBHSY-unsplash.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-top: 6.5rem;
 }
 
 #home .container {
     background-color: rgba(24, 57, 98, .8);
     width: 100%;
-    height: 65%;
+    height: 100%;
 }
 
 .jumbotron-fluid .row .col-10 {
     height: 100%;
 }
 
-@media (max-width: 991.98px) {
-    .jumbotron-fluid {
-        height: 40vh;
-        margin-top: 2rem;
-    }
+#home h1 {
+    padding: 9rem 0;
 }
 
-@media (min-width: 767.98px) and (orientation: portrait) {
-    .jumbotron-fluid {
-        height: 40vh;
-    }
-}
 
 
 

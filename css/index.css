@@ -561,12 +561,12 @@
 
 @media (max-width: 575.98px) {
     .fred {
-        height: 420px;
+        height: 430px;
     }
 
     #reviews .fred iframe {
         min-height: 0 !important;
-        height: 400px !important;
+        height: 410px !important;
     }
 }
 
