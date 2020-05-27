@@ -115,42 +115,29 @@ ol li {
     color: #fff;
 }
 
+.service-img-button {
+    border: none;
+    background-color: transparent;
+}
+
 .services-img-container img {
-    height: auto;
-    width: 275px;
-}
-
-.services-img {
     height: 12rem;
-    width: auto;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0 5px;
+    padding: 0 5px;
+    object-fit: contain;
+    object-position: center;
 }
 
-#therapy3 .services-img-1 {
-    background-image: url("../images/mara-ket-17yojkc2so4-unsplash.jpg");
+.modal-body-img {
+    max-height: 100%;
+    max-width: 100%;
 }
 
-#therapy3 .services-img-2 {
-    background-image: url("../images/autumn-goodman-vTL_qy03D1I-unsplash.jpg");
-}
-
-#therapy4 .services-img-1 {
-    background-image: url("../images/alex-block-3YlNd_1FVlo-unsplash.jpg");
-}
-
-#therapy4 .services-img-2 {
-    background-image: url("../images/noah-buscher-eCJiD00AJqs-unsplash.jpg");
-}
-
-#therapy4 .services-img-3 {
-    background-image: url("../images/anthony-tran-Sd9A6NVHsd4-unsplash.jpg");
-}
-
-#therapy4 .services-img-4 {
-    background-image: url("../images/zoltan-tasi-vHnVtLK8rCc-unsplash.jpg");
+.modal-body img {
+    object-fit: contain;
+    object-position: center;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 0 5px;
 }
 
 .owl-prev, .owl-next {
